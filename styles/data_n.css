@@ -1,0 +1,2694 @@
+:root {
+    --width: 75vw;;
+    --px1:  calc(var(--width) *  1 / 806);
+    --px2:  calc(var(--width) *  2 / 806);
+    --px3:  calc(var(--width) *  3 / 806);
+    --px4:  calc(var(--width) *  4 / 806);
+    --px5:  calc(var(--width) *  5 / 806);
+    --px6:  calc(var(--width) *  6 / 806);
+    --px7:  calc(var(--width) *  7 / 806);
+    --px8:  calc(var(--width) *  8 / 806);
+    --px9:  calc(var(--width) *  9 / 806);
+    --px10: calc(var(--width) * 10 / 806);
+    --px11: calc(var(--width) * 11 / 806);
+    --px12: calc(var(--width) * 12 / 806);
+    --px13: calc(var(--width) * 13 / 806);
+    --px14: calc(var(--width) * 14 / 806);
+    --px15: calc(var(--width) * 15 / 806);
+    --px16: calc(var(--width) * 16 / 806);
+    --px17: calc(var(--width) * 17 / 806);
+    --px18: calc(var(--width) * 18 / 806);
+    --px20: calc(var(--width) * 20 / 806);
+    --px21: calc(var(--width) * 21 / 806);
+    --px22: calc(var(--width) * 22 / 806);
+    --px23: calc(var(--width) * 23 / 806);
+    --px25: calc(var(--width) * 25 / 806);
+    --px27: calc(var(--width) * 27 / 806);
+    --px30: calc(var(--width) * 30 / 806);
+    --px35: calc(var(--width) * 35 / 806);
+    --px37: calc(var(--width) * 37 / 806);
+    --px38: calc(var(--width) * 38 / 806);
+    --px40: calc(var(--width) * 40 / 806);
+    --px49: calc(var(--width) * 49 / 806);
+    --px50: calc(var(--width) * 50 / 806);
+    --px60: calc(var(--width) * 60 / 806);
+    --px69: calc(var(--width) * 69 / 806);
+    --px75: calc(var(--width) * 75 / 806);
+    --px80: calc(var(--width) * 80 / 806);
+    --px90: calc(var(--width) * 90 / 806);
+    --px95: calc(var(--width) * 95 / 806);
+    --px116: calc(var(--width) * 116 / 806);
+    --px130: calc(var(--width) * 130 / 806);
+    --px135: calc(var(--width) * 135 / 806);
+    --px285: calc(var(--width) * 285 / 806);
+}
+
+html {
+    font-size: var(--px13);
+    overflow-y:scroll;
+    overflow-x:none;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family:ＭＳ Ｐゴシック
+}
+B {
+    font-weight:100;
+    margin: 0;
+    padding: 0;
+    display: block
+}
+BR {
+    clear: left
+}
+I {
+    font-style:normal;
+}
+
+/**************/
+/* フレーム枠 */
+/**************/
+.frm
+{
+      border-width: 0;
+      border-style:solid;
+      border-color:#99ccff;
+/*
+      border-radius: var(--px6);
+      -moz-border-radius: var(--px6);
+      -webkit-border-radius: var(--px6);
+      position:relative;
+*/
+      padding: var(--px5) 0 var(--px8) 0
+}
+
+P {
+    width: var(--width);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+B {
+    float: left;
+}
+
+/******************/
+/* 区切り線(点線) */
+/******************/
+.hs {
+    width: 99%;
+    height: var(--px1);
+    margin: 0 var(--px5) var(--px5) var(--px5);
+    padding: 0 0 0 0;
+    border-width: 0 0 var(--px1) 0;
+    border-color: #a8a8a8;
+    border-style: dashed;
+}
+
+/*****************************/
+/* if クラス（選手基本情報） */
+/*****************************/
+
+/* 枠 */
+.if {
+    width: 27.5%;
+    height: var(--px75);
+    margin: 0.125%;
+    font-size: var(--px12);
+}
+
+/* セル */
+.if > .c1,
+.if > .c2,
+.if > .c3
+{
+    width: 95%;
+    margin: 0 2.5%;
+    font-size: var(--px12);
+}
+.if > .c3 {
+    font-size: var(--px13);
+}
+
+/* 名前プレート */
+.if > .c1 > .nm {
+    width: 65%;
+    height: var(--px25);
+    line-height: var(--px20);
+    font-size: var(--px14);
+    margin: 1% 0;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+    background-size: 100% 75%;
+}
+
+.if > .c1 > .n9 {
+    font-size: var(--px12);
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .if > .c1 > .n9 {
+        font-size: var(--px12);
+    }
+}
+
+.if > .c1 > .p {
+    background-image: url(../assets/pnp_p.png);
+}
+.if > .c1 > .pr {
+    background-image: url(../assets/pnp_pr.png);
+}
+.if > .c1 > .rp {
+    background-image: url(../assets/pnp_rp.png);
+}
+.if > .c1 > .r {
+    background-image: url(../assets/pnp_r.png);
+}
+.if > .c1 > .pro {
+    background-image: url(../assets/pnp_pro.png);
+}
+.if > .c1 > .rpo {
+    background-image: url(../assets/pnp_rpo.png);
+}
+.if > .c1 > .ro {
+    background-image: url(../assets/pnp_ro.png);
+}
+.if > .c1 > .pc {
+    background-image: url(../assets/pnp_pc.png);
+}
+.if > .c1 > .pi {
+    background-image: url(../assets/pnp_pi.png);
+}
+.if > .c1 > .po {
+    background-image: url(../assets/pnp_po.png);
+}
+.if > .c1 > .pio {
+    background-image: url(../assets/pnp_pio.png);
+}
+.if > .c1 > .c {
+    background-image: url(../assets/pnp_c.png);
+}
+.if > .c1 > .ci {
+    background-image: url(../assets/pnp_ci.png);
+}
+.if > .c1 > .co {
+    background-image: url(../assets/pnp_co.png);
+}
+.if > .c1 > .cio {
+    background-image: url(../assets/pnp_cio.png);
+}
+.if > .c1 > .coi {
+    background-image: url(../assets/pnp_coi.png);
+}
+.if > .c1 > .i {
+    background-image: url(../assets/pnp_i.png);
+}
+.if > .c1 > .ic {
+    background-image: url(../assets/pnp_ic.png);
+}
+.if > .c1 > .io {
+    background-image: url(../assets/pnp_io.png);
+}
+.if > .c1 > .ico {
+    background-image: url(../assets/pnp_ico.png);
+}
+.if > .c1 > .ioc {
+    background-image: url(../assets/pnp_ioc.png);
+}
+.if > .c1 > .o {
+    background-image: url(../assets/pnp_o.png);
+}
+.if > .c1 > .oc {
+    background-image: url(../assets/pnp_oc.png);
+}
+.if > .c1 > .oi {
+    background-image: url(../assets/pnp_oi.png);
+}
+.if > .c1 > .oci {
+    background-image: url(../assets/pnp_oci.png);
+}
+.if > .c1 > .oic {
+    background-image: url(../assets/pnp_oic.png);
+}
+.if > .c1 > .roi {
+    background-image: url(../assets/pnp_roi.png);
+}
+
+/* 背番号 */
+.if > .c1 > .se {
+    width: 33%;
+    height: var(--px25);
+    line-height: var(--px25);
+    font-size: var(--px14);
+    margin: 0.5% 0 0 1%;
+    font-weight: 500;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../assets/se_p.png);
+    background-size: var(--px50) var(--px25);
+}
+
+/* フォーム */
+.if > .c2 > .m {
+    width: 60%;
+    height: var(--px20);
+    line-height: var(--px20);
+    text-align: center;
+    margin: 0 0.5%;
+}
+
+.if > .c2 > .m > B {
+    float: right;
+}
+
+/* 利き腕 */
+.if > .c2 > .m + B {
+    width: 30%;
+    height: var(--px20);
+    line-height: var(--px20);
+    text-align: center;
+    padding: 0;
+    margin: 0 1%;
+}
+
+.if > .c3 > .p {
+    width: 100%;
+}
+
+/* 防御率 */
+
+.if > .c3 > .p > B {
+    width: 50%;
+    height: var(--px20);
+    line-height: var(--px20);
+    font-weight: 500;
+}
+.if > .c3 > .p > B:before {
+    font-size: var(--px12);
+    margin-right: var(--px10);
+    content: "防御率";
+}
+
+.if > .c3 > .p > .era {
+    width: 100%;
+}
+
+/* 適性 */
+.if > .c3 > .p > B + B:before {
+    font-size: var(--px12);
+    margin-right: var(--px10);
+    content: "適　性";
+}
+
+/* 適性サブ */
+.if > .c3 > .p > B + B > I {
+    font-size: var(--px10);
+    padding-left: var(--px2);
+    font-weight: 500;
+}
+
+.if > .c3 > .b {
+    width: 100%;
+}
+
+/* 打率 */
+.if > .c3 > .b > B {
+    width: 33.333333333333336%;
+    text-align: right;
+    font-weight: 500;
+}
+.if > .c3 > .b > B:before {
+    font-size: var(--px12);
+    margin-right: var(--px5);
+    content: "打率";
+}
+
+.if > .c3 > .b > .avg {
+    width: 60%;
+}
+
+/* 本塁打 */
+.if > .c3 > .b > B + B {
+    width: 33.333333333333336%;
+    text-align: center;
+    font-weight: 500;
+}
+.if > .c3 > .b > B + B:before {
+    content: "";
+}
+.if > .c3 > .b > B + B:after {
+    font-size: var(--px12);
+    margin-left: var(--px5);
+    content: "本";
+}
+
+/* 打点 */
+.if > .c3 > .b > B + B + B {
+    width: 33.333333333333336%;
+    text-align: left;
+    font-weight: 500;
+}
+.if > .c3 > .b > B + B + B:before {
+    content: "";
+}
+.if > .c3 > .b > B + B + B:after {
+    font-size: var(--px12);
+    margin-left: var(--px5);
+    content: "打点";
+}
+
+/*****************************/
+/* cp クラス（投手セル） */
+/*****************************/
+
+/* 枠 */
+.cp {
+    width: 71.5%;
+    height: var(--px75);
+    margin: 0.25%;
+}
+
+/* セル */
+.cp > .c1,
+.cp > .c2,
+.cp > .c3 {
+    width: 15.5%;
+    height: var(--px75);
+    line-height: var(--px25);
+    margin: 0 0.125%;
+}
+
+/* 項目枠 */
+.cp > .c1 :first-child,
+.cp > .c2 :first-child,
+.cp > .c3 :first-child {
+    width: 90%;
+    height: var(--px16);
+    line-height: var(--px18);
+    margin: 5% 5% 0 5%;
+    border: var(--px1) solid #9ccde5;
+    background-color: #c6effb;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: var(--px4);
+    -moz-border-radius: var(--px4);
+    -webkit-border-radius: var(--px4);
+    -o-border-radius: var(--px4);
+    position: relative;
+}
+
+/* 項目名 */
+.cp > .c1 :first-child:before {
+    font-size: var(--px13);
+    content: "球　速";
+}
+.cp > .c2 :first-child:before {
+    font-size: var(--px13);
+    content: "コントロール";
+}
+.cp > .c3 :first-child:before {
+    font-size: var(--px13);
+    content: "スタミナ";
+}
+
+/* 球速 */
+.cp > .c1 > B + I {
+    width: 100%;
+    height: var(--px50);
+    line-height: var(--px50);
+    font-size: var(--px17);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: left var(--px2);
+    font-weight: 500;
+}
+.cp > .c1 > B + I:after {
+    margin-left: var(--px4);
+    font-size: var(--px14);
+    content: "km/h";
+}
+
+/* A～G枠 */
+.cp > .c2 > B + I,
+.cp > .c3 > B + I {
+    height: var(--px49);
+    font-size: var(--px17);
+    line-height: var(--px49);
+    padding: 0 var(--px3) 0 0;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: left var(--px2);
+}
+
+/* A～G画像 */
+.cp > .c1 > .s,
+.cp > .c2 > .s,
+.cp > .c3 > .s,
+.cp > .c1 > .a,
+.cp > .c2 > .a,
+.cp > .c3 > .a,
+.cp > .c1 > .b,
+.cp > .c2 > .b,
+.cp > .c3 > .b,
+.cp > .c1 > .c,
+.cp > .c2 > .c,
+.cp > .c3 > .c,
+.cp > .c1 > .d,
+.cp > .c2 > .d,
+.cp > .c3 > .d,
+.cp > .c1 > .e,
+.cp > .c2 > .e,
+.cp > .c3 > .e,
+.cp > .c1 > .f,
+.cp > .c2 > .f,
+.cp > .c3 > .f,
+.cp > .c1 > .g,
+.cp > .c2 > .g,
+.cp > .c3 > .g
+{
+    background-size: var(--px15) var(--px15);
+    padding-left: var(--px20);
+    font-weight: 500;
+}
+
+.cp > .c1 > .sx,
+.cp > .c2 > .sx,
+.cp > .c3 > .sx,
+.cp > .c1 > .ax,
+.cp > .c2 > .ax,
+.cp > .c3 > .ax,
+.cp > .c1 > .bx,
+.cp > .c2 > .bx,
+.cp > .c3 > .bx,
+.cp > .c1 > .cx,
+.cp > .c2 > .cx,
+.cp > .c3 > .cx,
+.cp > .c1 > .dx,
+.cp > .c2 > .dx,
+.cp > .c3 > .dx,
+.cp > .c1 > .ex,
+.cp > .c2 > .ex,
+.cp > .c3 > .ex,
+.cp > .c1 > .fx,
+.cp > .c2 > .fx,
+.cp > .c3 > .fx,
+.cp > .c1 > .gx,
+.cp > .c2 > .gx,
+.cp > .c3 > .gx
+{
+    background-size: var(--px15) var(--px15);
+    padding-left: var(--px20);
+    background-position: center var(--px2);
+}
+
+
+.cp > .c1 > .s,
+.cp > .c2 > .s,
+.cp > .c3 > .s,
+.cp > .c1 > .s,
+.cp > .c2 > .sx,
+.cp > .c3 > .sx
+{
+    background-image: url(../assets/S.png);
+}
+.cp > .c1 > .a,
+.cp > .c2 > .a,
+.cp > .c3 > .a,
+.cp > .c1 > .ax,
+.cp > .c2 > .ax,
+.cp > .c3 > .ax
+{
+    background-image: url(../assets/A.png);
+}
+.cp > .c1 > .b,
+.cp > .c2 > .b,
+.cp > .c3 > .b,
+.cp > .c1 > .bx,
+.cp > .c2 > .bx,
+.cp > .c3 > .bx
+{
+    background-image: url(../assets/B.png);
+}
+.cp > .c1 > .c,
+.cp > .c2 > .c,
+.cp > .c3 > .c,
+.cp > .c1 > .cx,
+.cp > .c2 > .cx,
+.cp > .c3 > .cx
+{
+    background-image: url(../assets/C.png);
+}
+.cp > .c1 > .d,
+.cp > .c2 > .d,
+.cp > .c3 > .d,
+.cp > .c1 > .dx,
+.cp > .c2 > .dx,
+.cp > .c3 > .dx
+{
+    background-image: url(../assets/D.png);
+}
+.cp > .c1 > .e,
+.cp > .c2 > .e,
+.cp > .c3 > .e,
+.cp > .c1 > .ex,
+.cp > .c2 > .ex,
+.cp > .c3 > .ex
+{
+    background-image: url(../assets/E.png);
+}
+.cp > .c1 > .f,
+.cp > .c2 > .f,
+.cp > .c3 > .f,
+.cp > .c1 > .fx,
+.cp > .c2 > .fx,
+.cp > .c3 > .fx
+{
+    background-image: url(../assets/F.png);
+}
+.cp > .c1 > .g,
+.cp > .c2 > .g,
+.cp > .c3 > .g,
+.cp > .c1 > .gx,
+.cp > .c2 > .gx,
+.cp > .c3 > .gx
+{
+    background-image: url(../assets/G.png);
+}
+
+/*****************************/
+/* cb クラス（野手セル） */
+/*****************************/
+
+/* 枠 */
+.cb {
+    width: 71.5%;
+    height: var(--px75);
+    margin: 0.25%;
+}
+
+/* セル */
+.cb > .c1,
+.cb > .c2,
+.cb > .c3,
+.cb > .c4,
+.cb > .c5,
+.cb > .c6,
+.cb > .c7 {
+    width: 12%;
+    height: var(--px75);
+    line-height: var(--px23);
+    margin: 0 0.5% 0 0;
+}
+.cb > .c8 {
+    width: 10%;
+    height: var(--px75);
+    line-height: var(--px23);
+    margin: 0;
+}
+.cb > .c9 {
+    width: 50%;
+    height: var(--px75);
+    line-height: var(--px23);
+    margin: 0 0.5% 0 0;
+}
+.cb > .c9 > .ca,
+.cb > .c9 > .cb,
+.cb > .c9 > .cc {
+    width: 33.333333333333336%;
+    height: var(--px75);
+    margin: 0;
+}
+
+.cb > .c9 > .ca > B + B,
+.cb > .c9 > .ca > B + B + B,
+.cb > .c9 > .cb > B,
+.cb > .c9 > .cb > B + B,
+.cb > .c9 > .cb > B + B + B,
+.cb > .c9 > .cc > B,
+.cb > .c9 > .cc > B + B,
+.cb > .c9 > .cc > B + B + B {
+    width: 85%;
+    height: var(--px25);
+    margin: 0 5%;
+    padding: 0 5%;
+    line-height: var(--px25);
+    text-align: left;
+    border-width: 0;
+}
+
+/* 項目枠 */
+.cb > .c1 :first-child,
+.cb > .c2 :first-child,
+.cb > .c3 :first-child,
+.cb > .c4 :first-child,
+.cb > .c5 :first-child,
+.cb > .c6 :first-child,
+.cb > .c7 :first-child,
+.cb > .c8 :first-child,
+.cb > .c9 > .ca > .w {
+    width: 87.5%;
+    height: var(--px16);
+    line-height: var(--px18);
+    margin: 5% 5% 0 5%;
+    border: var(--px1) solid #9ccde5;
+    background-color: #c6effb;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    border-radius: var(--px4);
+    -moz-border-radius: var(--px4);
+    -webkit-border-radius: var(--px4);
+    -o-border-radius: var(--px4);
+    position: relative;
+}
+
+/* 項目名 */
+.cb > .c1 :first-child:before {
+    font-size: var(--px12);
+    content: "弾　道";
+}
+.cb > .c2 :first-child:before {
+    font-size: var(--px12);
+    content: "ミート";
+}
+.cb > .c3 :first-child:before {
+    font-size: var(--px12);
+    content: "パワー";
+}
+.cb > .c4 :first-child:before {
+    font-size: var(--px12);
+    content: "走　力";
+}
+.cb > .c5 :first-child:before {
+    font-size: var(--px12);
+    content: "肩　力";
+}
+.cb > .c6 :first-child:before,
+.cb > .c9 > .ca > .w:before {
+    font-size: var(--px12);
+    content: "守　力";
+}
+.cb > .c7 :first-child:before {
+    font-size: var(--px11);
+    content: "エラー回避";
+}
+.cb > .c67 :first-child:before {
+    font-size: var(--px12);
+    content: "エラー回避";
+}
+.cb > .c8 :first-child:before {
+    font-size: var(--px11);
+    content: "守備位置";
+}
+
+.cb > .c9 > .ca > B + B:before {
+    font-size: var(--px14);
+    content: "投：";
+    color: #2b5f82;
+}
+.cb > .c9 > .ca > B + B + B:before {
+    font-size: var(--px14);
+    content: "捕：";
+    color: #2b5f82;
+}
+.cb > .c9 > .cb > B:before {
+    font-size: var(--px14);
+    content: "一：";
+    color: #2b5f82;
+}
+.cb > .c9 > .cb > B + B:before {
+    font-size: var(--px14);
+    content: "二：";
+    color: #2b5f82;
+}
+.cb > .c9 > .cb > B + B + B:before {
+    font-size: var(--px14);
+    content: "三：";
+    color: #2b5f82;
+}
+.cb > .c9 > .cc > B:before {
+    font-size: var(--px14);
+    content: "遊：";
+    color: #2b5f82;
+}
+.cb > .c9 > .cc > B + B:before {
+    font-size: var(--px14);
+    content: "外：";
+    color: #2b5f82;
+}
+.cb > .c9 > .ca > .w:before {
+    font-size: var(--px12);
+    content:"守備力";
+}
+.cb > .c7 :first-child:before {
+    font-size: var(--px12);
+    content:"捕　球";
+}
+.cb > .c67 :first-child:before {
+    font-size: var(--px12);
+    content:"捕　球";
+}
+
+/* A～G枠 */
+.cb > .c1 > B + I,
+.cb > .c2 > B + I,
+.cb > .c3 > B + I,
+.cb > .c4 > B + I,
+.cb > .c5 > B + I,
+.cb > .c6 > B + I,
+.cb > .c7 > B + I {
+    height: var(--px49);
+    font-size: var(--px17);
+    line-height: var(--px49);
+    padding: 0 var(--px3) 0 0;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: left var(--px2);
+}
+
+.cb > .c9 > .ca > B > I,
+.cb > .c9 > .cb > B > I,
+.cb > .c9 > .cc > B > I {
+    height: var(--px25);
+    font-size: var(--px16);
+    line-height: var(--px25);
+    font-size: var(--px16);
+    margin-left: var(--px4);
+    padding: 0 var(--px3) 0 0;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: left var(--px1);
+    color: #2b5f82;
+    letter-spacing: var(--px3);
+}
+
+.cb > .c8 > B + B {
+    width: 100%;
+    height: var(--px49);
+    line-height: var(--px49);
+    text-align: center;
+    font-size: var(--px13);
+    background-image: none;
+}
+.cb > .c8 > B + B:first-letter {
+    font-size: var(--px16);
+}
+
+/* 弾道 */
+.cb > .c1 > .a,
+.cb > .c1 > .b,
+.cb > .c1 > .c,
+.cb > .c1 > .d
+{
+    padding-left: var(--px20);
+    font-weight: 500;
+    background-size: var(--px15) var(--px15);
+}
+.cb > .c1 > .a {
+    background-image: url(../assets/1.png);
+}
+.cb > .c1 > .b {
+    background-image: url(../assets/2.png);
+}
+.cb > .c1 > .c {
+    background-image: url(../assets/3.png);
+}
+.cb > .c1 > .d {
+    background-image: url(../assets/4.png);
+}
+
+/* A～G画像 */
+.cb > .c2 > .s,
+.cb > .c3 > .s,
+.cb > .c4 > .s,
+.cb > .c5 > .s,
+.cb > .c6 > .s,
+.cb > .c7 > .s,
+.cb > .c9 > .ca > B > .s,
+.cb > .c9 > .cb > B > .s,
+.cb > .c9 > .cc > B > .s,
+.cb > .c2 > .a,
+.cb > .c3 > .a,
+.cb > .c4 > .a,
+.cb > .c5 > .a,
+.cb > .c6 > .a,
+.cb > .c7 > .a,
+.cb > .c9 > .ca > B > .a,
+.cb > .c9 > .cb > B > .a,
+.cb > .c9 > .cc > B > .a,
+.cb > .c2 > .b,
+.cb > .c3 > .b,
+.cb > .c4 > .b,
+.cb > .c5 > .b,
+.cb > .c6 > .b,
+.cb > .c7 > .b,
+.cb > .c9 > .ca > B > .b,
+.cb > .c9 > .cb > B > .b,
+.cb > .c9 > .cc > B > .b,
+.cb > .c2 > .c,
+.cb > .c3 > .c,
+.cb > .c4 > .c,
+.cb > .c5 > .c,
+.cb > .c6 > .c,
+.cb > .c7 > .c,
+.cb > .c9 > .ca > B > .c,
+.cb > .c9 > .cb > B > .c,
+.cb > .c9 > .cc > B > .c,
+.cb > .c2 > .d,
+.cb > .c3 > .d,
+.cb > .c4 > .d,
+.cb > .c5 > .d,
+.cb > .c6 > .d,
+.cb > .c7 > .d,
+.cb > .c9 > .ca > B > .d,
+.cb > .c9 > .cb > B > .d,
+.cb > .c9 > .cc > B > .d,
+.cb > .c2 > .e,
+.cb > .c3 > .e,
+.cb > .c4 > .e,
+.cb > .c5 > .e,
+.cb > .c6 > .e,
+.cb > .c7 > .e,
+.cb > .c9 > .ca > B > .e,
+.cb > .c9 > .cb > B > .e,
+.cb > .c9 > .cc > B > .e,
+.cb > .c2 > .f,
+.cb > .c3 > .f,
+.cb > .c4 > .f,
+.cb > .c5 > .f,
+.cb > .c6 > .f,
+.cb > .c7 > .f,
+.cb > .c9 > .ca > B > .f,
+.cb > .c9 > .cb > B > .f,
+.cb > .c9 > .cc > B > .f,
+.cb > .c2 > .g,
+.cb > .c3 > .g,
+.cb > .c4 > .g,
+.cb > .c5 > .g,
+.cb > .c6 > .g,
+.cb > .c7 > .g,
+.cb > .c9 > .ca > B > .g,
+.cb > .c9 > .cb > B > .g,
+.cb > .c9 > .cc > B > .g
+{
+    color: #000000;
+    background-size: var(--px15) var(--px15);
+    padding-left: var(--px18);
+    font-family: arial, sans-serif;
+    letter-spacing: 0;
+    font-weight: 500;
+}
+
+.cb > .c2 > .sx,
+.cb > .c3 > .sx,
+.cb > .c4 > .sx,
+.cb > .c5 > .sx,
+.cb > .c6 > .sx,
+.cb > .c7 > .sx,
+.cb > .c9 > .ca > B > .sx,
+.cb > .c9 > .cb > B > .sx,
+.cb > .c9 > .cc > B > .sx,
+.cb > .c2 > .ax,
+.cb > .c3 > .ax,
+.cb > .c4 > .ax,
+.cb > .c5 > .ax,
+.cb > .c6 > .ax,
+.cb > .c7 > .ax,
+.cb > .c9 > .ca > B > .ax,
+.cb > .c9 > .cb > B > .ax,
+.cb > .c9 > .cc > B > .ax,
+.cb > .c2 > .bx,
+.cb > .c3 > .bx,
+.cb > .c4 > .bx,
+.cb > .c5 > .bx,
+.cb > .c6 > .bx,
+.cb > .c7 > .bx,
+.cb > .c9 > .ca > B > .bx,
+.cb > .c9 > .cb > B > .bx,
+.cb > .c9 > .cc > B > .bx,
+.cb > .c2 > .cx,
+.cb > .c3 > .cx,
+.cb > .c4 > .cx,
+.cb > .c5 > .cx,
+.cb > .c6 > .cx,
+.cb > .c7 > .cx,
+.cb > .c9 > .ca > B > .cx,
+.cb > .c9 > .cb > B > .cx,
+.cb > .c9 > .cc > B > .cx,
+.cb > .c2 > .dx,
+.cb > .c3 > .dx,
+.cb > .c4 > .dx,
+.cb > .c5 > .dx,
+.cb > .c6 > .dx,
+.cb > .c7 > .dx,
+.cb > .c9 > .ca > B > .dx,
+.cb > .c9 > .cb > B > .dx,
+.cb > .c9 > .cc > B > .dx,
+.cb > .c2 > .ex,
+.cb > .c3 > .ex,
+.cb > .c4 > .ex,
+.cb > .c5 > .ex,
+.cb > .c6 > .ex,
+.cb > .c7 > .ex,
+.cb > .c9 > .ca > B > .ex,
+.cb > .c9 > .cb > B > .ex,
+.cb > .c9 > .cc > B > .ex,
+.cb > .c2 > .fx,
+.cb > .c3 > .fx,
+.cb > .c4 > .fx,
+.cb > .c5 > .fx,
+.cb > .c6 > .fx,
+.cb > .c7 > .fx,
+.cb > .c9 > .ca > B > .fx,
+.cb > .c9 > .cb > B > .fx,
+.cb > .c9 > .cc > B > .fx,
+.cb > .c2 > .gx,
+.cb > .c3 > .gx,
+.cb > .c4 > .gx,
+.cb > .c5 > .gx,
+.cb > .c6 > .gx,
+.cb > .c7 > .gx,
+.cb > .c9 > .ca > B > .gx,
+.cb > .c9 > .cb > B > .gx,
+.cb > .c9 > .cc > B > .gx
+{
+    color: #000000;
+    padding-left: var(--px18);
+    background-position: center var(--px4);
+    background-size: var(--px15) var(--px15);
+}
+
+.cb > .c2 > .s,
+.cb > .c3 > .s,
+.cb > .c4 > .s,
+.cb > .c5 > .s,
+.cb > .c6 > .s,
+.cb > .c7 > .s,
+.cb > .c9 > .ca > B > .s,
+.cb > .c9 > .cb > B > .s,
+.cb > .c9 > .cc > B > .s,
+.cb > .c2 > .sx,
+.cb > .c3 > .sx,
+.cb > .c4 > .sx,
+.cb > .c5 > .sx,
+.cb > .c6 > .sx,
+.cb > .c7 > .sx,
+.cb > .c9 > .ca > B > .sx,
+.cb > .c9 > .cb > B > .sx,
+.cb > .c9 > .cc > B > .sx
+{
+    background-image: url(../assets/S.png);
+}
+.cb > .c2 > .a,
+.cb > .c3 > .a,
+.cb > .c4 > .a,
+.cb > .c5 > .a,
+.cb > .c6 > .a,
+.cb > .c7 > .a,
+.cb > .c9 > .ca > B > .a,
+.cb > .c9 > .cb > B > .a,
+.cb > .c9 > .cc > B > .a,
+.cb > .c2 > .ax,
+.cb > .c3 > .ax,
+.cb > .c4 > .ax,
+.cb > .c5 > .ax,
+.cb > .c6 > .ax,
+.cb > .c7 > .ax,
+.cb > .c9 > .ca > B > .ax,
+.cb > .c9 > .cb > B > .ax,
+.cb > .c9 > .cc > B > .ax
+{
+    background-image: url(../assets/A.png);
+}
+.cb > .c2 > .b,
+.cb > .c3 > .b,
+.cb > .c4 > .b,
+.cb > .c5 > .b,
+.cb > .c6 > .b,
+.cb > .c7 > .b,
+.cb > .c9 > .ca > B > .b,
+.cb > .c9 > .cb > B > .b,
+.cb > .c9 > .cc > B > .b
+.cb > .c2 > .bx,
+.cb > .c3 > .bx,
+.cb > .c4 > .bx,
+.cb > .c5 > .bx,
+.cb > .c6 > .bx,
+.cb > .c7 > .bx,
+.cb > .c9 > .ca > B > .bx,
+.cb > .c9 > .cb > B > .bx,
+.cb > .c9 > .cc > B > .bx
+{
+    background-image: url(../assets/B.png);
+}
+.cb > .c2 > .c,
+.cb > .c3 > .c,
+.cb > .c4 > .c,
+.cb > .c5 > .c,
+.cb > .c6 > .c,
+.cb > .c7 > .c,
+.cb > .c9 > .ca > B > .c,
+.cb > .c9 > .cb > B > .c,
+.cb > .c9 > .cc > B > .c,
+.cb > .c2 > .cx,
+.cb > .c3 > .cx,
+.cb > .c4 > .cx,
+.cb > .c5 > .cx,
+.cb > .c6 > .cx,
+.cb > .c7 > .cx,
+.cb > .c9 > .ca > B > .cx,
+.cb > .c9 > .cb > B > .cx,
+.cb > .c9 > .cc > B > .cx
+{
+    background-image: url(../assets/C.png);
+}
+.cb > .c2 > .d,
+.cb > .c3 > .d,
+.cb > .c4 > .d,
+.cb > .c5 > .d,
+.cb > .c6 > .d,
+.cb > .c7 > .d,
+.cb > .c9 > .ca > B > .d,
+.cb > .c9 > .cb > B > .d,
+.cb > .c9 > .cc > B > .d,
+.cb > .c2 > .dx,
+.cb > .c3 > .dx,
+.cb > .c4 > .dx,
+.cb > .c5 > .dx,
+.cb > .c6 > .dx,
+.cb > .c7 > .dx,
+.cb > .c9 > .ca > B > .dx,
+.cb > .c9 > .cb > B > .dx,
+.cb > .c9 > .cc > B > .dx
+{
+    background-image: url(../assets/D.png);
+}
+.cb > .c2 > .e,
+.cb > .c3 > .e,
+.cb > .c4 > .e,
+.cb > .c5 > .e,
+.cb > .c6 > .e,
+.cb > .c7 > .e,
+.cb > .c9 > .ca > B > .e,
+.cb > .c9 > .cb > B > .e,
+.cb > .c9 > .cc > B > .e
+.cb > .c2 > .ex,
+.cb > .c3 > .ex,
+.cb > .c4 > .ex,
+.cb > .c5 > .ex,
+.cb > .c6 > .ex,
+.cb > .c7 > .ex,
+.cb > .c9 > .ca > B > .ex,
+.cb > .c9 > .cb > B > .ex,
+.cb > .c9 > .cc > B > .ex
+{
+    background-image: url(../assets/E.png);
+}
+.cb > .c2 > .f,
+.cb > .c3 > .f,
+.cb > .c4 > .f,
+.cb > .c5 > .f,
+.cb > .c6 > .f,
+.cb > .c7 > .f,
+.cb > .c9 > .ca > B > .f,
+.cb > .c9 > .cb > B > .f,
+.cb > .c9 > .cc > B > .f
+.cb > .c2 > .fx,
+.cb > .c3 > .fx,
+.cb > .c4 > .fx,
+.cb > .c5 > .fx,
+.cb > .c6 > .fx,
+.cb > .c7 > .fx,
+.cb > .c9 > .ca > B > .fx,
+.cb > .c9 > .cb > B > .fx,
+.cb > .c9 > .cc > B > .fx
+{
+    background-image: url(../assets/F.png);
+}
+.cb > .c2 > .g,
+.cb > .c3 > .g,
+.cb > .c4 > .g,
+.cb > .c5 > .g,
+.cb > .c6 > .g,
+.cb > .c7 > .g,
+.cb > .c9 > .ca > B > .g,
+.cb > .c9 > .cb > B > .g,
+.cb > .c9 > .cc > B > .g
+.cb > .c2 > .gx,
+.cb > .c3 > .gx,
+.cb > .c4 > .gx,
+.cb > .c5 > .gx,
+.cb > .c6 > .gx,
+.cb > .c7 > .gx,
+.cb > .c9 > .ca > B > .gx,
+.cb > .c9 > .cb > B > .gx,
+.cb > .c9 > .cc > B > .gx
+{
+    background-image: url(../assets/G.png);
+}
+
+/***************************/
+/* bl クラス（変化球セル） */
+/***************************/
+
+.bl {
+    width: var(--px285);
+    margin: 0 0.5%;
+    font-size: var(--px9);
+    color: #0000ff;
+    font-weight: 800;
+    padding: 0 calc(25% - var(--px135) - var(--px17));
+}
+
+.bl .c1 {
+    width: var(--px135);
+    font-size: var(--px9);
+}
+.bl .c2 {
+    width: var(--px14);
+    font-size: var(--px9);
+}
+.bl .c3 {
+    width: var(--px135);
+    font-size: var(--px9);
+}
+
+.bl > .c1 > B {
+    width: var(--px135);
+    height: var(--px13);
+    padding: 0;
+    text-align: right;
+}
+.bl > .c1 > B + B {
+    width: var(--px90);
+    height: var(--px13);
+    padding: 0 var(--px40) 0 0;
+    margin-right: var(--px5);
+    background: url(../assets/b/10.png);
+    background-size: var(--px38) var(--px12);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    line-height: var(--px9);
+    text-align: right;
+}
+.bl > .c1 > B + B + B {
+    width: var(--px95);
+    height: var(--px20);
+    padding: var(--px10) var(--px40) 0 0;
+    margin-right: 0;
+    background: url(../assets/b/20.png);
+    background-size: var(--px37) var(--px27);
+    background-position: right var(--px2);
+    background-repeat: no-repeat;
+    text-align: right;
+    line-height: var(--px10);
+}
+.bl > .c1 > B + B + B + B {
+    width: var(--px135);
+    height: var(--px10);
+    padding: var(--px8) 0 0 0;
+    background-image: none;
+    text-align: right;
+}
+
+.bl > .c2 > .x {
+    width: var(--px14);
+    height: var(--px18);
+    background-image: none;
+}
+.bl > .c2 > B {
+    width: var(--px14);
+    height: var(--px18);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: var(--px12) var(--px12);
+    background-image: url(../assets/b/n01.png);
+}
+.bl > .c2 > B + B {
+    width: var(--px14);
+    height: var(--px12);
+    background-repeat: no-repeat;
+    background-position: center var(--px4);
+    background-size: var(--px8) var(--px8);
+    background-image: url(../assets/b/b.png);
+}
+.bl > .c2 > B + B + B {
+    width: var(--px14);
+    height: var(--px40);
+    margin-top: var(--px6);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: var(--px12) var(--px38);
+    background-image: url(../assets/b/30.png);
+}
+
+.bl > .c3 > B {
+    width: var(--px135);
+    height: var(--px13);
+    padding: 0;
+    text-align: left;
+}
+.bl > .c3 > B + B {
+    width: var(--px90);
+    height: var(--px13);
+    padding: 0 0 0 var(--px40);
+    margin-left: var(--px5);
+    background: url(../assets/b/50.png);
+    background-size: var(--px38) var(--px12);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    line-height: var(--px9);
+    text-align: left;
+}
+.bl > .c3 > B + B + B {
+    width: var(--px95);
+    height: var(--px20);
+    padding: var(--px10) 0 0 var(--px40);
+    margin-left: 0;
+    background: url(../assets/b/40.png);
+    background-size: var(--px37) var(--px27);
+    background-position: left var(--px2);
+    background-repeat: no-repeat;
+    text-align: left;
+    line-height: var(--px10);
+}
+.bl > .c3 > B + B + B + B {
+    width: var(--px135);
+    height: var(--px10);
+    padding: var(--px8) 0 0 0;
+    background-image: none;
+    text-align: left;
+}
+
+/*****************************/
+/* ab クラス（特殊能力） */
+/*****************************/
+
+/* 枠 */
+.ab {
+    width: 100%;
+    margin: 0 var(--px4) var(--px5) var(--px3);
+    padding: 0;
+    font-size: var(--px12);
+    line-height: var(--px20);
+    background-size: 14.285714285714286% var(--px20);
+}
+
+.ab > .l,
+.ab > .n,
+.ab > .y,
+.ab > .y > B
+{
+    width: 99%;
+    line-height: var(--px20);
+    margin: 0;
+    background-size: 14.285714285714286% var(--px20);
+    background-repeat: repeat;
+}
+
+
+.ab > .l {
+    background-image: url(../assets/pabi_l.png);
+}
+
+.ab > .l > .G,
+.ab > .l > .P,
+.ab > .l > .M,
+.ab > .l > .W,
+.ab > .l > .N,
+.ab > .n > .G,
+.ab > .n > .P,
+.ab > .n > .M,
+.ab > .n > .N,
+.ab > .n > .PM
+{
+    width: 14.285714285714286%;
+    height: var(--px20);
+    background-size: 100% 100%;
+}
+
+.ab > .l > .P > B,
+.ab > .l > .M > B,
+.ab > .l > .N > B
+{
+    width: 80%;
+}
+
+.ab > .l > .G > B + B,
+.ab > .l > .P > B + B,
+.ab > .l > .M > B + B,
+.ab > .l > .N > B + B,
+.ab > .l > .PM > B + B
+{
+    width: 20%;
+}
+
+.ab > .l > .st {
+    font-size: var(--px11);
+}
+
+.ab > .n {
+    height: var(--px80);
+    background-image: url(../assets/pabi.png);
+}
+
+.ab > .l > .G,
+.ab > .n > .G {
+    background-image: url(../assets/pabi_g.png);
+}
+.ab > .l > .P {
+    background-image: url(../assets/pabi_lp.png);
+}
+.ab > .n > .P {
+    background-image: url(../assets/pabi_p.png);
+}
+.ab > .l > .M {
+    background-image: url(../assets/pabi_lm.png);
+}
+.ab > .l > .W,
+.ab > .n > .M {
+    background-image: url(../assets/pabi_m.png);
+}
+.ab > .n > .PM {
+    background-image: url(../assets/pabi_pm.png);
+}
+
+.ab > .n > B,
+.ab > .y > B
+{
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/pabi.png);
+}
+
+.ab > .y {
+    height: var(--px40);
+    border-width: var(--px1);
+    border-style: solid;
+    border-color: #169dc3;
+    background-color: #169dc3;
+    border-radius: var(--px4);
+    -moz-border-radius: var(--px4);
+    -webkit-border-radius: var(--px4);
+    position: relative;
+}
+
+.ab > .y > B {
+    background-image: url(../assets/pabi.png);
+}
+
+.ab > .y > B :first-child {
+    width: 14.285714285714286%;
+    background-image: none;
+    background-color: #169dc3;
+    background-size: calc(14.285714285714286%) 99%;
+    color: #ffffff;
+}
+
+.ab > .y > B > B {
+    width: 14.285714285714286%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-image: url(../assets/pabi_k.png);
+    float: left;
+}
+
+.ab > .y > B > .ob {
+    background-color: transparent;
+    background-image: url(../assets/pabi.png);
+    letter-spacing: var(--px3);
+}
+
+/*****************************/
+/*            タブ           */
+/*****************************/
+.tp
+{
+    margin: 0 0 0 var(--px2);
+    padding: 0;
+    border-width: 0;
+    background-color: transparent;
+    text-align: left;
+}
+
+.tp > .x-p { background-color: #800f2b; }
+.tp > .x-p:checked { background-color: #e73562; }
+.tp > .x-f { background-color: #00478f; }
+.tp > .x-f:checked { background-color: #1e90ff; }
+.tp > .x-d { background-color: #006616; }
+.tp > .x-d:checked { background-color: #00cc2c; }
+.tp > .x-n { background-color: #634c18; }
+.tp > .x-n:checked { background-color: #c4972f; }
+
+.tp > input
+{
+    width: 10%;
+    min-width: var(--px80);
+    height: var(--px20);
+    font-size: var(--px13);
+    line-height: var(--px20);
+    color: #ffffff;
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+    border-radius: var(--px8) var(--px8) 0 0;
+    -moz-border-radius: var(--px8) var(--px8) 0 0;
+    -webkit-border-radius: var(--px8) var(--px8) 0 0;
+    -o-border-radius: var(--px8) var(--px8) 0 0;
+    position: relative;
+}
+
+.tp > .x-p:before {
+    font-size: var(--px13);
+    content: "投手能力";
+}
+.tp > .x-f:before {
+    font-size: var(--px13);
+    content: "野手能力";
+}
+.tp > .x-d:before {
+    font-size: var(--px13);
+    content: "守備力";
+}
+.tp > .x-n:before {
+    font-size: var(--px13);
+    content: "その他";
+}
+
+.tp:has(.x-p:checked) ~ .db > * .tb-p,
+.tp:has(.x-f:checked) ~ .db > * .tb-f,
+.tp:has(.x-d:checked) ~ .db > * .tb-d,
+.tp:has(.x-n:checked) ~ .db > * .tb-n,
+.tb:has(.x-p:checked) ~ .db > * .tb-p,
+.tb:has(.x-f:checked) ~ .db > * .tb-f,
+.tb:has(.x-d:checked) ~ .db > * .tb-d,
+.tb:has(.x-n:checked) ~ .db > * .tb-n
+{
+    display: block;
+}
+
+.tb-p, .tb-f, .tb-d, .tb-n
+{
+    display: none;
+}
+
+
+/*****************************/
+/*       フォント            */
+/*****************************/
+.if,
+.cp > .c1 :first-child,
+.cp > .c2 :first-child,
+.cp > .c3 :first-child,
+.cp > .c1 > B + B,
+.cp > .c2 > B + B + B,
+.cp > .c3 > B + B + B,
+.cb > .c1 :first-child,
+.cb > .c2 :first-child,
+.cb > .c3 :first-child,
+.cb > .c4 :first-child,
+.cb > .c5 :first-child,
+.cb > .c6 :first-child,
+.cb > .c7 :first-child,
+.cb > .c8 :first-child,
+.cb > .c1 > B + B + B,
+.cb > .c2 > B + B + B,
+.cb > .c3 > B + B + B,
+.cb > .c4 > B + B + B,
+.cb > .c5 > B + B + B,
+.cb > .c6 > B + B + B,
+.cb > .c7 > B + B + B,
+.cb > .c8 > B + B,
+.cb > .c8 > B + B + B,
+I,
+.ab > .y > B > .ob {
+    font-family: arial, sans-serif;
+}
+
+.ab > .l > .P,
+.ab > .l > .M,
+.ab > .l > .P > B,
+.ab > .l > .P > B + B,
+.ab > .l > .M > B,
+.ab > .l > .M > B + B,
+.ab > .l > .N > B,
+.ab > .l > .N > B + B,
+.ab > .n > .G,
+.ab > .n > .P,
+.ab > .n > .M,
+.ab > .n > .PM,
+.ab > .y > B :first-child,
+.ab > .y > B > B,
+.bl > .c1 > B,
+.bl > .c1 > B + B,
+.bl > .c1 > B + B + B,
+.bl > .c1 > B + B + B + B,
+.bl > .c3 > B,
+.bl > .c3 > B + B,
+.bl > .c3 > B + B + B,
+.bl > .c3 > B + B + B + B,
+.cp > .bl > .c1,
+.cp > .bl > .c2,
+.cp > .bl > .c3,
+.tp > B:before,
+.tp > B + B:before,
+.tp > B + B + B:before,
+.tb > B:before,
+.tb > B + B:before
+{
+    font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+}
+
+.if > .c3 > .p > B:before,
+.if > .c3 > .p > B + B:before,
+.if > .c3 > .b > B:before,
+.if > .c3 > .b > B + B:after,
+.if > .c3 > .b > B + B + B:after,
+.cp > .c1 :first-child,
+.cp > .c2 :first-child,
+.cp > .c3 :first-child,
+.cb > .c1 :first-child,
+.cb > .c2 :first-child,
+.cb > .c3 :first-child,
+.cb > .c4 :first-child,
+.cb > .c5 :first-child,
+.cb > .c6 :first-child,
+.cb > .c7 :first-child,
+.cb > .c8 :first-child,
+.cb > .c9 > .ca > B + B:before,
+.cb > .c9 > .ca > B + B + B:before,
+.cb > .c9 > .cb > B:before,
+.cb > .c9 > .cb > B + B:before,
+.cb > .c9 > .cb > B + B + B:before,
+.cb > .c9 > .cc > B:before,
+.cb > .c9 > .cc > B + B:before,
+.cb > .c9 > .ca :first-child
+{
+    font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+    color: #2b5f82;
+}
+
+/*****************************/
+/*       背景色・罫線        */
+/*****************************/
+
+/* 外枠線 */
+P {
+    border: var(--px1) solid #4682b4;
+    background-color: #edf3ff;
+    /*
+    border-radius: 0 var(--px4) var(--px4) var(--px4);
+    -moz-border-radius: 0 var(--px4) var(--px4) var(--px4);
+    -webkit-border-radius: 0 var(--px4) var(--px4) var(--px4);
+    -o-border-radius: 0 var(--px4) var(--px4) var(--px4);
+    position:relative;*/
+}
+
+/* セル内区切り線 */
+.if > .c1,
+.if > .c2,
+.cb > .c9 > .ca > B + B,
+.cb > .c9 > .cb > B,
+.cb > .c9 > .cb > B + B,
+.cb > .c9 > .cc > B,
+.cb > .c9 > .cc > B + B {
+    border-width: 0 0 var(--px1) 0;
+    border-style: solid;
+    border-color: #9ccde5;
+}
+
+/* 枠線 */
+.w {
+    border: var(--px1) solid #9ccde5;
+    background-color: #ffffff;
+    border-radius: var(--px4);
+    -moz-border-radius: var(--px4);
+    -webkit-border-radius: var(--px4);
+    -o-border-radius: var(--px4);
+    position: relative;
+}
+
+/*****************************/
+/*           名前            */
+/*****************************/
+
+.bt .df  {background-image: url(../g/title_def2.png);}
+.pb .df > B  {background-image: url(../g/title_p_def2.png);}
+
+.bt .er  {background-image: url(../g/title_hokyu.png);}
+.pb .er > B  {background-image: url(../g/title_p_hokyu.png);}
+
+
+.cbp-spmenu B {
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-family: メイリオ;
+}
+.cbp-spmenu A {
+    text-decoration: none;
+    color: #000000;
+}
+.cbp-spmenu .btn {
+    height: var(--px25);
+    font-size: var(--px30);
+    line-height: var(--px20);
+    margin-left: var(--px116);
+    margin-bottom: var(--px15);
+    border-width: 0;
+    border-style: solid;
+    border-color: #808080;
+    background-color: #f0f0f0;
+}
+
+.cbp-spmenu .left,
+.cbp-spmenu .right {
+    width: var(--px35);
+    height: var(--px18);
+    padding: var(--px2) 0 var(--px2) 0;
+    cursor: pointer;
+}
+.cbp-spmenu .center {
+    width: var(--px60);
+    height: var(--px20);
+    margin: var(--px2) 0 0 0;
+    line-height: var(--px22);
+    background-color: #1155a4;
+    color: #ffffff;
+    border-radius: var(--px8);
+    -moz-border-radius: var(--px8);
+    -webkit-border-radius: var(--px8);
+    -o-border-radius: var(--px8);
+    position: relative;
+}
+
+.cbp-spmenu .nm {
+    width: var(--px130);
+    margin-left: var(--px15);
+}
+.cbp-spmenu .nm > B {
+    height: var(--px20);
+    font-size: var(--px13);
+    line-height: var(--px21);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.cbp-spmenu .nm .n9 {
+    font-size: var(--px12);
+}
+.cbp-spmenu .nm .P,
+.cbp-spmenu .nm .PR,
+.cbp-spmenu .nm .RP,
+.cbp-spmenu .nm .R,
+.cbp-spmenu .nm .PRO,
+.cbp-spmenu .nm .RPO,
+.cbp-spmenu .nm .ROI,
+.cbp-spmenu .nm .RO,
+.cbp-spmenu .nm .ROI,
+.cbp-spmenu .nm .PC,
+.cbp-spmenu .nm .PI,
+.cbp-spmenu .nm .PO,
+.cbp-spmenu .nm .PIO,
+.cbp-spmenu .nm .C,
+.cbp-spmenu .nm .CI,
+.cbp-spmenu .nm .CO,
+.cbp-spmenu .nm .CIO,
+.cbp-spmenu .nm .COI,
+.cbp-spmenu .nm .I,
+.cbp-spmenu .nm .IC,
+.cbp-spmenu .nm .IO,
+.cbp-spmenu .nm .ICO,
+.cbp-spmenu .nm .IOC,
+.cbp-spmenu .nm .O,
+.cbp-spmenu .nm .OC,
+.cbp-spmenu .nm .OI,
+.cbp-spmenu .nm .OCI,
+.cbp-spmenu .nm .OIC {
+    width: var(--px130);
+}
+.cbp-spmenu .nm .P {
+    background-image: url(../assets/pnp_p.png);
+}
+.cbp-spmenu .nm .PR {
+    background-image: url(../assets/pnp_pr.png);
+}
+.cbp-spmenu .nm .RP {
+    background-image: url(../assets/pnp_rp.png);
+}
+.cbp-spmenu .nm .R {
+    background-image: url(../assets/pnp_r.png);
+}
+.cbp-spmenu .nm .PRO {
+    background-image: url(../assets/pnp_pro.png);
+}
+.cbp-spmenu .nm .RPO {
+    background-image: url(../assets/pnp_rpo.png);
+}
+.cbp-spmenu .nm .RO {
+    background-image: url(../assets/pnp_ro.png);
+}
+.cbp-spmenu .nm .ROI {
+    background-image: url(../assets/pnp_roi.png);
+}
+.cbp-spmenu .nm .PC {
+    background-image: url(../assets/pnp_pc.png);
+}
+.cbp-spmenu .nm .PI {
+    background-image: url(../assets/pnp_pi.png);
+}
+.cbp-spmenu .nm .PO {
+    background-image: url(../assets/pnp_po.png);
+}
+.cbp-spmenu .nm .PIO {
+    background-image: url(../assets/pnp_pio.png);
+}
+.cbp-spmenu .nm .C {
+    background-image: url(../assets/pnp_c.png);
+}
+.cbp-spmenu .nm .CI {
+    background-image: url(../assets/pnp_ci.png);
+}
+.cbp-spmenu .nm .CO {
+    background-image: url(../assets/pnp_co.png);
+}
+.cbp-spmenu .nm .CIO {
+    background-image: url(../assets/pnp_cio.png);
+}
+.cbp-spmenu .nm .COI {
+    background-image: url(../assets/pnp_coi.png);
+}
+.cbp-spmenu .nm .I {
+    background-image: url(../assets/pnp_i.png);
+}
+.cbp-spmenu .nm .IC {
+    background-image: url(../assets/pnp_ic.png);
+}
+.cbp-spmenu .nm .IO {
+    background-image: url(../assets/pnp_io.png);
+}
+.cbp-spmenu .nm .ICO {
+    background-image: url(../assets/pnp_ico.png);
+}
+.cbp-spmenu .nm .IOC {
+    background-image: url(../assets/pnp_ioc.png);
+}
+.cbp-spmenu .nm .O {
+    background-image: url(../assets/pnp_o.png);
+}
+.cbp-spmenu .nm .OC {
+    background-image: url(../assets/pnp_oc.png);
+}
+.cbp-spmenu .nm .OI {
+    background-image: url(../assets/pnp_oi.png);
+}
+.cbp-spmenu .nm .OCI {
+    background-image: url(../assets/pnp_oci.png);
+}
+.cbp-spmenu .nm .OIC {
+    background-image: url(../assets/pnp_oic.png);
+}
+
+/************/
+/*　変化球　*/
+/************/
+
+/* 上方向（NPB） */
+.bl > .c2 > .n1,
+.bl > .c2 > .n11
+{
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size: var(--px12) var(--px12);
+}
+.bl > .c2 > .n1  {background-image: url(../assets/b/n01.png);}
+.bl > .c2 > .n11 {background-image: url(../assets/b/n011.png);}
+
+/* 上方向（MLB） */
+.bl > .c2 > .m0,
+.bl > .c2 > .m1,
+.bl > .c2 > .m2,
+.bl > .c2 > .m3,
+.bl > .c2 > .m11,
+.bl > .c2 > .m12,
+.bl > .c2 > .m13,
+.bl > .c2 > .m21,
+.bl > .c2 > .m22,
+.bl > .c2 > .m23,
+.bl > .c2 > .m31,
+.bl > .c2 > .m32,
+.bl > .c2 > .m33
+{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: var(--px12) var(--px18);
+}
+.bl > .c2 > .m0  {background-image: url(../assets/b/m00.png);}
+.bl > .c2 > .m1  {background-image: url(../assets/b/m01.png);}
+.bl > .c2 > .m2  {background-image: url(../assets/b/m02.png);}
+.bl > .c2 > .m3  {background-image: url(../assets/b/m03.png);}
+.bl > .c2 > .m11 {background-image: url(../assets/b/m011.png);}
+.bl > .c2 > .m12 {background-image: url(../assets/b/m012.png);}
+.bl > .c2 > .m13 {background-image: url(../assets/b/m013.png);}
+.bl > .c2 > .m21 {background-image: url(../assets/b/m021.png);}
+.bl > .c2 > .m22 {background-image: url(../assets/b/m022.png);}
+.bl > .c2 > .m23 {background-image: url(../assets/b/m023.png);}
+.bl > .c2 > .m31 {background-image: url(../assets/b/m031.png);}
+.bl > .c2 > .m32 {background-image: url(../assets/b/m032.png);}
+.bl > .c2 > .m33 {background-image: url(../assets/b/m033.png);}
+
+/* 左横方向・右横方向*/
+.bl > .c1 > .v11,
+.bl > .c1 > .v12,
+.bl > .c1 > .v13,
+.bl > .c1 > .v14,
+.bl > .c1 > .v15,
+.bl > .c1 > .v16,
+.bl > .c1 > .v17,
+.bl > .c1 > .v111,
+.bl > .c1 > .v112,
+.bl > .c1 > .v113,
+.bl > .c1 > .v114,
+.bl > .c1 > .v115,
+.bl > .c1 > .v116,
+.bl > .c1 > .v117,
+.bl > .c1 > .v121,
+.bl > .c1 > .v122,
+.bl > .c1 > .v123,
+.bl > .c1 > .v124,
+.bl > .c1 > .v125,
+.bl > .c1 > .v126,
+.bl > .c1 > .v127,
+.bl > .c1 > .v131,
+.bl > .c1 > .v132,
+.bl > .c1 > .v133,
+.bl > .c1 > .v134,
+.bl > .c1 > .v135,
+.bl > .c1 > .v136,
+.bl > .c1 > .v137,
+.bl > .c1 > .v141,
+.bl > .c1 > .v142,
+.bl > .c1 > .v143,
+.bl > .c1 > .v144,
+.bl > .c1 > .v145,
+.bl > .c1 > .v146,
+.bl > .c1 > .v147,
+.bl > .c1 > .v151,
+.bl > .c1 > .v152,
+.bl > .c1 > .v153,
+.bl > .c1 > .v154,
+.bl > .c1 > .v155,
+.bl > .c1 > .v156,
+.bl > .c1 > .v157,
+.bl > .c1 > .v161,
+.bl > .c1 > .v162,
+.bl > .c1 > .v163,
+.bl > .c1 > .v164,
+.bl > .c1 > .v165,
+.bl > .c1 > .v166,
+.bl > .c1 > .v167,
+.bl > .c1 > .v171,
+.bl > .c1 > .v172,
+.bl > .c1 > .v173,
+.bl > .c1 > .v174,
+.bl > .c1 > .v175,
+.bl > .c1 > .v176,
+.bl > .c1 > .v177
+{
+    background-position: right center;
+    background-repeat:no-repeat;
+}
+.bl > .c1 > .v11  {background-image: url(../assets/b/11.png);}
+.bl > .c1 > .v12  {background-image: url(../assets/b/12.png);}
+.bl > .c1 > .v13  {background-image: url(../assets/b/13.png);}
+.bl > .c1 > .v14  {background-image: url(../assets/b/14.png);}
+.bl > .c1 > .v15  {background-image: url(../assets/b/15.png);}
+.bl > .c1 > .v16  {background-image: url(../assets/b/16.png);}
+.bl > .c1 > .v17  {background-image: url(../assets/b/17.png);}
+.bl > .c1 > .v111 {background-image: url(../assets/b/111.png);}
+.bl > .c1 > .v112 {background-image: url(../assets/b/112.png);}
+.bl > .c1 > .v113 {background-image: url(../assets/b/113.png);}
+.bl > .c1 > .v114 {background-image: url(../assets/b/114.png);}
+.bl > .c1 > .v115 {background-image: url(../assets/b/115.png);}
+.bl > .c1 > .v116 {background-image: url(../assets/b/116.png);}
+.bl > .c1 > .v117 {background-image: url(../assets/b/117.png);}
+.bl > .c1 > .v121 {background-image: url(../assets/b/121.png);}
+.bl > .c1 > .v122 {background-image: url(../assets/b/122.png);}
+.bl > .c1 > .v123 {background-image: url(../assets/b/123.png);}
+.bl > .c1 > .v124 {background-image: url(../assets/b/124.png);}
+.bl > .c1 > .v125 {background-image: url(../assets/b/125.png);}
+.bl > .c1 > .v126 {background-image: url(../assets/b/126.png);}
+.bl > .c1 > .v127 {background-image: url(../assets/b/127.png);}
+.bl > .c1 > .v131 {background-image: url(../assets/b/131.png);}
+.bl > .c1 > .v132 {background-image: url(../assets/b/132.png);}
+.bl > .c1 > .v133 {background-image: url(../assets/b/133.png);}
+.bl > .c1 > .v134 {background-image: url(../assets/b/134.png);}
+.bl > .c1 > .v135 {background-image: url(../assets/b/135.png);}
+.bl > .c1 > .v136 {background-image: url(../assets/b/136.png);}
+.bl > .c1 > .v137 {background-image: url(../assets/b/137.png);}
+.bl > .c1 > .v141 {background-image: url(../assets/b/141.png);}
+.bl > .c1 > .v142 {background-image: url(../assets/b/142.png);}
+.bl > .c1 > .v143 {background-image: url(../assets/b/143.png);}
+.bl > .c1 > .v144 {background-image: url(../assets/b/144.png);}
+.bl > .c1 > .v145 {background-image: url(../assets/b/145.png);}
+.bl > .c1 > .v146 {background-image: url(../assets/b/146.png);}
+.bl > .c1 > .v147 {background-image: url(../assets/b/147.png);}
+.bl > .c1 > .v151 {background-image: url(../assets/b/151.png);}
+.bl > .c1 > .v152 {background-image: url(../assets/b/152.png);}
+.bl > .c1 > .v153 {background-image: url(../assets/b/153.png);}
+.bl > .c1 > .v154 {background-image: url(../assets/b/154.png);}
+.bl > .c1 > .v155 {background-image: url(../assets/b/155.png);}
+.bl > .c1 > .v156 {background-image: url(../assets/b/156.png);}
+.bl > .c1 > .v157 {background-image: url(../assets/b/157.png);}
+.bl > .c1 > .v161 {background-image: url(../assets/b/161.png);}
+.bl > .c1 > .v162 {background-image: url(../assets/b/162.png);}
+.bl > .c1 > .v163 {background-image: url(../assets/b/163.png);}
+.bl > .c1 > .v164 {background-image: url(../assets/b/164.png);}
+.bl > .c1 > .v165 {background-image: url(../assets/b/165.png);}
+.bl > .c1 > .v166 {background-image: url(../assets/b/166.png);}
+.bl > .c1 > .v167 {background-image: url(../assets/b/167.png);}
+.bl > .c1 > .v171 {background-image: url(../assets/b/171.png);}
+.bl > .c1 > .v172 {background-image: url(../assets/b/172.png);}
+.bl > .c1 > .v173 {background-image: url(../assets/b/173.png);}
+.bl > .c1 > .v174 {background-image: url(../assets/b/174.png);}
+.bl > .c1 > .v175 {background-image: url(../assets/b/175.png);}
+.bl > .c1 > .v176 {background-image: url(../assets/b/176.png);}
+.bl > .c1 > .v177 {background-image: url(../assets/b/177.png);}
+
+.bl > .c1 > .v21,
+.bl > .c1 > .v22,
+.bl > .c1 > .v23,
+.bl > .c1 > .v24,
+.bl > .c1 > .v25,
+.bl > .c1 > .v26,
+.bl > .c1 > .v27,
+.bl > .c1 > .v211,
+.bl > .c1 > .v212,
+.bl > .c1 > .v213,
+.bl > .c1 > .v214,
+.bl > .c1 > .v215,
+.bl > .c1 > .v216,
+.bl > .c1 > .v217,
+.bl > .c1 > .v221,
+.bl > .c1 > .v222,
+.bl > .c1 > .v223,
+.bl > .c1 > .v224,
+.bl > .c1 > .v225,
+.bl > .c1 > .v226,
+.bl > .c1 > .v227,
+.bl > .c1 > .v231,
+.bl > .c1 > .v232,
+.bl > .c1 > .v233,
+.bl > .c1 > .v234,
+.bl > .c1 > .v235,
+.bl > .c1 > .v236,
+.bl > .c1 > .v237,
+.bl > .c1 > .v241,
+.bl > .c1 > .v242,
+.bl > .c1 > .v243,
+.bl > .c1 > .v244,
+.bl > .c1 > .v245,
+.bl > .c1 > .v246,
+.bl > .c1 > .v247,
+.bl > .c1 > .v251,
+.bl > .c1 > .v252,
+.bl > .c1 > .v253,
+.bl > .c1 > .v254,
+.bl > .c1 > .v255,
+.bl > .c1 > .v256,
+.bl > .c1 > .v257,
+.bl > .c1 > .v261,
+.bl > .c1 > .v262,
+.bl > .c1 > .v263,
+.bl > .c1 > .v264,
+.bl > .c1 > .v265,
+.bl > .c1 > .v266,
+.bl > .c1 > .v267,
+.bl > .c1 > .v271,
+.bl > .c1 > .v272,
+.bl > .c1 > .v273,
+.bl > .c1 > .v274,
+.bl > .c1 > .v275,
+.bl > .c1 > .v276,
+.bl > .c1 > .v277
+{
+    background-position: right center;
+    background-repeat:no-repeat;
+}
+.bl > .c1 > .v21  {background-image: url(../assets/b/21.png);}
+.bl > .c1 > .v22  {background-image: url(../assets/b/22.png);}
+.bl > .c1 > .v23  {background-image: url(../assets/b/23.png);}
+.bl > .c1 > .v24  {background-image: url(../assets/b/24.png);}
+.bl > .c1 > .v25  {background-image: url(../assets/b/25.png);}
+.bl > .c1 > .v26  {background-image: url(../assets/b/26.png);}
+.bl > .c1 > .v27  {background-image: url(../assets/b/27.png) ;}
+.bl > .c1 > .v211 {background-image: url(../assets/b/211.png);}
+.bl > .c1 > .v212 {background-image: url(../assets/b/212.png);}
+.bl > .c1 > .v213 {background-image: url(../assets/b/213.png);}
+.bl > .c1 > .v214 {background-image: url(../assets/b/214.png);}
+.bl > .c1 > .v215 {background-image: url(../assets/b/215.png);}
+.bl > .c1 > .v216 {background-image: url(../assets/b/216.png);}
+.bl > .c1 > .v217 {background-image: url(../assets/b/217.png);}
+.bl > .c1 > .v221 {background-image: url(../assets/b/221.png);}
+.bl > .c1 > .v222 {background-image: url(../assets/b/222.png);}
+.bl > .c1 > .v223 {background-image: url(../assets/b/223.png);}
+.bl > .c1 > .v224 {background-image: url(../assets/b/224.png);}
+.bl > .c1 > .v225 {background-image: url(../assets/b/225.png);}
+.bl > .c1 > .v226 {background-image: url(../assets/b/226.png);}
+.bl > .c1 > .v227 {background-image: url(../assets/b/227.png);}
+.bl > .c1 > .v231 {background-image: url(../assets/b/231.png);}
+.bl > .c1 > .v232 {background-image: url(../assets/b/232.png);}
+.bl > .c1 > .v233 {background-image: url(../assets/b/233.png);}
+.bl > .c1 > .v234 {background-image: url(../assets/b/234.png);}
+.bl > .c1 > .v235 {background-image: url(../assets/b/235.png);}
+.bl > .c1 > .v236 {background-image: url(../assets/b/236.png);}
+.bl > .c1 > .v237 {background-image: url(../assets/b/237.png);}
+.bl > .c1 > .v241 {background-image: url(../assets/b/241.png);}
+.bl > .c1 > .v242 {background-image: url(../assets/b/242.png);}
+.bl > .c1 > .v243 {background-image: url(../assets/b/243.png);}
+.bl > .c1 > .v244 {background-image: url(../assets/b/244.png);}
+.bl > .c1 > .v245 {background-image: url(../assets/b/245.png);}
+.bl > .c1 > .v246 {background-image: url(../assets/b/246.png);}
+.bl > .c1 > .v247 {background-image: url(../assets/b/247.png);}
+.bl > .c1 > .v251 {background-image: url(../assets/b/251.png);}
+.bl > .c1 > .v252 {background-image: url(../assets/b/252.png);}
+.bl > .c1 > .v253 {background-image: url(../assets/b/253.png);}
+.bl > .c1 > .v254 {background-image: url(../assets/b/254.png);}
+.bl > .c1 > .v255 {background-image: url(../assets/b/255.png);}
+.bl > .c1 > .v256 {background-image: url(../assets/b/256.png);}
+.bl > .c1 > .v257 {background-image: url(../assets/b/257.png);}
+.bl > .c1 > .v261 {background-image: url(../assets/b/261.png);}
+.bl > .c1 > .v262 {background-image: url(../assets/b/262.png);}
+.bl > .c1 > .v263 {background-image: url(../assets/b/263.png);}
+.bl > .c1 > .v264 {background-image: url(../assets/b/264.png);}
+.bl > .c1 > .v265 {background-image: url(../assets/b/265.png);}
+.bl > .c1 > .v266 {background-image: url(../assets/b/266.png);}
+.bl > .c1 > .v267 {background-image: url(../assets/b/267.png);}
+.bl > .c1 > .v271 {background-image: url(../assets/b/271.png);}
+.bl > .c1 > .v272 {background-image: url(../assets/b/272.png);}
+.bl > .c1 > .v273 {background-image: url(../assets/b/273.png);}
+.bl > .c1 > .v274 {background-image: url(../assets/b/274.png);}
+.bl > .c1 > .v275 {background-image: url(../assets/b/275.png);}
+.bl > .c1 > .v276 {background-image: url(../assets/b/276.png);}
+.bl > .c1 > .v277 {background-image: url(../assets/b/277.png);}
+
+.bl > .c1 > .vm21,
+.bl > .c1 > .vm22,
+.bl > .c1 > .vm23,
+.bl > .c1 > .vm24,
+.bl > .c1 > .vm25,
+.bl > .c1 > .vm26,
+.bl > .c1 > .vm27,
+.bl > .c1 > .vm211,
+.bl > .c1 > .vm212,
+.bl > .c1 > .vm213,
+.bl > .c1 > .vm214,
+.bl > .c1 > .vm215,
+.bl > .c1 > .vm216,
+.bl > .c1 > .vm217,
+.bl > .c1 > .vm221,
+.bl > .c1 > .vm222,
+.bl > .c1 > .vm223,
+.bl > .c1 > .vm224,
+.bl > .c1 > .vm225,
+.bl > .c1 > .vm226,
+.bl > .c1 > .vm227,
+.bl > .c1 > .vm231,
+.bl > .c1 > .vm232,
+.bl > .c1 > .vm233,
+.bl > .c1 > .vm234,
+.bl > .c1 > .vm235,
+.bl > .c1 > .vm236,
+.bl > .c1 > .vm237,
+.bl > .c1 > .vm241,
+.bl > .c1 > .vm242,
+.bl > .c1 > .vm243,
+.bl > .c1 > .vm244,
+.bl > .c1 > .vm245,
+.bl > .c1 > .vm246,
+.bl > .c1 > .vm247,
+.bl > .c1 > .vm251,
+.bl > .c1 > .vm252,
+.bl > .c1 > .vm253,
+.bl > .c1 > .vm254,
+.bl > .c1 > .vm255,
+.bl > .c1 > .vm256,
+.bl > .c1 > .vm257,
+.bl > .c1 > .vm261,
+.bl > .c1 > .vm262,
+.bl > .c1 > .vm263,
+.bl > .c1 > .vm264,
+.bl > .c1 > .vm265,
+.bl > .c1 > .vm266,
+.bl > .c1 > .vm267,
+.bl > .c1 > .vm271,
+.bl > .c1 > .vm272,
+.bl > .c1 > .vm273,
+.bl > .c1 > .vm274,
+.bl > .c1 > .vm275,
+.bl > .c1 > .vm276,
+.bl > .c1 > .vm277
+{
+    background-position: right var(--px3);
+    background-repeat:no-repeat;
+    background-size: var(--px37) var(--px27);
+}
+.bl > .c1 > .vm21  {background-image: url(../assets/b/21.png);}
+.bl > .c1 > .vm22  {background-image: url(../assets/b/22.png);}
+.bl > .c1 > .vm23  {background-image: url(../assets/b/23.png);}
+.bl > .c1 > .vm24  {background-image: url(../assets/b/24.png);}
+.bl > .c1 > .vm25  {background-image: url(../assets/b/25.png);}
+.bl > .c1 > .vm26  {background-image: url(../assets/b/26.png);}
+.bl > .c1 > .vm27  {background-image: url(../assets/b/27.png);}
+.bl > .c1 > .vm211 {background-image: url(../assets/b/211.png);}
+.bl > .c1 > .vm212 {background-image: url(../assets/b/212.png);}
+.bl > .c1 > .vm213 {background-image: url(../assets/b/213.png);}
+.bl > .c1 > .vm214 {background-image: url(../assets/b/214.png);}
+.bl > .c1 > .vm215 {background-image: url(../assets/b/215.png);}
+.bl > .c1 > .vm216 {background-image: url(../assets/b/216.png);}
+.bl > .c1 > .vm217 {background-image: url(../assets/b/217.png);}
+.bl > .c1 > .vm221 {background-image: url(../assets/b/221.png);}
+.bl > .c1 > .vm222 {background-image: url(../assets/b/222.png);}
+.bl > .c1 > .vm223 {background-image: url(../assets/b/223.png);}
+.bl > .c1 > .vm224 {background-image: url(../assets/b/224.png);}
+.bl > .c1 > .vm225 {background-image: url(../assets/b/225.png);}
+.bl > .c1 > .vm226 {background-image: url(../assets/b/226.png);}
+.bl > .c1 > .vm227 {background-image: url(../assets/b/227.png);}
+.bl > .c1 > .vm231 {background-image: url(../assets/b/231.png);}
+.bl > .c1 > .vm232 {background-image: url(../assets/b/232.png);}
+.bl > .c1 > .vm233 {background-image: url(../assets/b/233.png);}
+.bl > .c1 > .vm234 {background-image: url(../assets/b/234.png);}
+.bl > .c1 > .vm235 {background-image: url(../assets/b/235.png);}
+.bl > .c1 > .vm236 {background-image: url(../assets/b/236.png);}
+.bl > .c1 > .vm237 {background-image: url(../assets/b/237.png);}
+.bl > .c1 > .vm241 {background-image: url(../assets/b/241.png);}
+.bl > .c1 > .vm242 {background-image: url(../assets/b/242.png);}
+.bl > .c1 > .vm243 {background-image: url(../assets/b/243.png);}
+.bl > .c1 > .vm244 {background-image: url(../assets/b/244.png);}
+.bl > .c1 > .vm245 {background-image: url(../assets/b/245.png);}
+.bl > .c1 > .vm246 {background-image: url(../assets/b/246.png);}
+.bl > .c1 > .vm247 {background-image: url(../assets/b/247.png);}
+.bl > .c1 > .vm251 {background-image: url(../assets/b/251.png);}
+.bl > .c1 > .vm252 {background-image: url(../assets/b/252.png);}
+.bl > .c1 > .vm253 {background-image: url(../assets/b/253.png);}
+.bl > .c1 > .vm254 {background-image: url(../assets/b/254.png);}
+.bl > .c1 > .vm255 {background-image: url(../assets/b/255.png);}
+.bl > .c1 > .vm256 {background-image: url(../assets/b/256.png);}
+.bl > .c1 > .vm257 {background-image: url(../assets/b/257.png);}
+.bl > .c1 > .vm261 {background-image: url(../assets/b/261.png);}
+.bl > .c1 > .vm262 {background-image: url(../assets/b/262.png);}
+.bl > .c1 > .vm263 {background-image: url(../assets/b/263.png);}
+.bl > .c1 > .vm264 {background-image: url(../assets/b/264.png);}
+.bl > .c1 > .vm265 {background-image: url(../assets/b/265.png);}
+.bl > .c1 > .vm266 {background-image: url(../assets/b/266.png);}
+.bl > .c1 > .vm267 {background-image: url(../assets/b/267.png);}
+.bl > .c1 > .vm271 {background-image: url(../assets/b/271.png);}
+.bl > .c1 > .vm272 {background-image: url(../assets/b/272.png);}
+.bl > .c1 > .vm273 {background-image: url(../assets/b/273.png);}
+.bl > .c1 > .vm274 {background-image: url(../assets/b/274.png);}
+.bl > .c1 > .vm275 {background-image: url(../assets/b/275.png);}
+.bl > .c1 > .vm276 {background-image: url(../assets/b/276.png);}
+.bl > .c1 > .vm277 {background-image: url(../assets/b/277.png);}
+
+.bl > .c2 > .v31,
+.bl > .c2 > .v32,
+.bl > .c2 > .v33,
+.bl > .c2 > .v34,
+.bl > .c2 > .v35,
+.bl > .c2 > .v36,
+.bl > .c2 > .v37,
+.bl > .c2 > .v311,
+.bl > .c2 > .v312,
+.bl > .c2 > .v313,
+.bl > .c2 > .v314,
+.bl > .c2 > .v315,
+.bl > .c2 > .v316,
+.bl > .c2 > .v317,
+.bl > .c2 > .v321,
+.bl > .c2 > .v322,
+.bl > .c2 > .v323,
+.bl > .c2 > .v324,
+.bl > .c2 > .v325,
+.bl > .c2 > .v326,
+.bl > .c2 > .v327,
+.bl > .c2 > .v331,
+.bl > .c2 > .v332,
+.bl > .c2 > .v333,
+.bl > .c2 > .v334,
+.bl > .c2 > .v335,
+.bl > .c2 > .v336,
+.bl > .c2 > .v337,
+.bl > .c2 > .v341,
+.bl > .c2 > .v342,
+.bl > .c2 > .v343,
+.bl > .c2 > .v344,
+.bl > .c2 > .v345,
+.bl > .c2 > .v346,
+.bl > .c2 > .v347,
+.bl > .c2 > .v351,
+.bl > .c2 > .v352,
+.bl > .c2 > .v353,
+.bl > .c2 > .v354,
+.bl > .c2 > .v355,
+.bl > .c2 > .v356,
+.bl > .c2 > .v357,
+.bl > .c2 > .v361,
+.bl > .c2 > .v362,
+.bl > .c2 > .v363,
+.bl > .c2 > .v364,
+.bl > .c2 > .v365,
+.bl > .c2 > .v366,
+.bl > .c2 > .v367,
+.bl > .c2 > .v371,
+.bl > .c2 > .v372,
+.bl > .c2 > .v373,
+.bl > .c2 > .v374,
+.bl > .c2 > .v375,
+.bl > .c2 > .v376,
+.bl > .c2 > .v377
+{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: var(--px12) var(--px38);
+}
+
+.bl > .c2 > .v31  {background-image: url(../assets/b/31.png);}
+.bl > .c2 > .v32  {background-image: url(../assets/b/32.png);}
+.bl > .c2 > .v33  {background-image: url(../assets/b/33.png);}
+.bl > .c2 > .v34  {background-image: url(../assets/b/34.png);}
+.bl > .c2 > .v35  {background-image: url(../assets/b/35.png);}
+.bl > .c2 > .v36  {background-image: url(../assets/b/36.png);}
+.bl > .c2 > .v37  {background-image: url(../assets/b/37.png);}
+.bl > .c2 > .v311 {background-image: url(../assets/b/311.png);}
+.bl > .c2 > .v312 {background-image: url(../assets/b/312.png);}
+.bl > .c2 > .v313 {background-image: url(../assets/b/313.png);}
+.bl > .c2 > .v314 {background-image: url(../assets/b/314.png);}
+.bl > .c2 > .v315 {background-image: url(../assets/b/315.png);}
+.bl > .c2 > .v316 {background-image: url(../assets/b/316.png);}
+.bl > .c2 > .v317 {background-image: url(../assets/b/317.png);}
+.bl > .c2 > .v321 {background-image: url(../assets/b/321.png);}
+.bl > .c2 > .v322 {background-image: url(../assets/b/322.png);}
+.bl > .c2 > .v323 {background-image: url(../assets/b/323.png);}
+.bl > .c2 > .v324 {background-image: url(../assets/b/324.png);}
+.bl > .c2 > .v325 {background-image: url(../assets/b/325.png);}
+.bl > .c2 > .v326 {background-image: url(../assets/b/326.png);}
+.bl > .c2 > .v327 {background-image: url(../assets/b/327.png);}
+.bl > .c2 > .v331 {background-image: url(../assets/b/331.png);}
+.bl > .c2 > .v332 {background-image: url(../assets/b/332.png);}
+.bl > .c2 > .v333 {background-image: url(../assets/b/333.png);}
+.bl > .c2 > .v334 {background-image: url(../assets/b/334.png);}
+.bl > .c2 > .v335 {background-image: url(../assets/b/335.png);}
+.bl > .c2 > .v336 {background-image: url(../assets/b/336.png);}
+.bl > .c2 > .v337 {background-image: url(../assets/b/337.png);}
+.bl > .c2 > .v341 {background-image: url(../assets/b/341.png);}
+.bl > .c2 > .v342 {background-image: url(../assets/b/342.png);}
+.bl > .c2 > .v343 {background-image: url(../assets/b/343.png);}
+.bl > .c2 > .v344 {background-image: url(../assets/b/344.png);}
+.bl > .c2 > .v345 {background-image: url(../assets/b/345.png);}
+.bl > .c2 > .v346 {background-image: url(../assets/b/346.png);}
+.bl > .c2 > .v347 {background-image: url(../assets/b/347.png);}
+.bl > .c2 > .v351 {background-image: url(../assets/b/351.png);}
+.bl > .c2 > .v352 {background-image: url(../assets/b/352.png);}
+.bl > .c2 > .v353 {background-image: url(../assets/b/353.png);}
+.bl > .c2 > .v354 {background-image: url(../assets/b/354.png);}
+.bl > .c2 > .v355 {background-image: url(../assets/b/355.png);}
+.bl > .c2 > .v356 {background-image: url(../assets/b/356.png);}
+.bl > .c2 > .v357 {background-image: url(../assets/b/357.png);}
+.bl > .c2 > .v361 {background-image: url(../assets/b/361.png);}
+.bl > .c2 > .v362 {background-image: url(../assets/b/362.png);}
+.bl > .c2 > .v363 {background-image: url(../assets/b/363.png);}
+.bl > .c2 > .v364 {background-image: url(../assets/b/364.png);}
+.bl > .c2 > .v365 {background-image: url(../assets/b/365.png);}
+.bl > .c2 > .v366 {background-image: url(../assets/b/366.png);}
+.bl > .c2 > .v367 {background-image: url(../assets/b/367.png);}
+.bl > .c2 > .v371 {background-image: url(../assets/b/371.png);}
+.bl > .c2 > .v372 {background-image: url(../assets/b/372.png);}
+.bl > .c2 > .v373 {background-image: url(../assets/b/373.png);}
+.bl > .c2 > .v374 {background-image: url(../assets/b/374.png);}
+.bl > .c2 > .v375 {background-image: url(../assets/b/375.png);}
+.bl > .c2 > .v376 {background-image: url(../assets/b/376.png);}
+.bl > .c2 > .v377 {background-image: url(../assets/b/377.png);}
+
+.bl > .c3 > .v41,
+.bl > .c3 > .v42,
+.bl > .c3 > .v43,
+.bl > .c3 > .v44,
+.bl > .c3 > .v45,
+.bl > .c3 > .v46,
+.bl > .c3 > .v47,
+.bl > .c3 > .v411,
+.bl > .c3 > .v412,
+.bl > .c3 > .v413,
+.bl > .c3 > .v414,
+.bl > .c3 > .v415,
+.bl > .c3 > .v416,
+.bl > .c3 > .v417,
+.bl > .c3 > .v421,
+.bl > .c3 > .v422,
+.bl > .c3 > .v423,
+.bl > .c3 > .v424,
+.bl > .c3 > .v425,
+.bl > .c3 > .v426,
+.bl > .c3 > .v427,
+.bl > .c3 > .v431,
+.bl > .c3 > .v432,
+.bl > .c3 > .v433,
+.bl > .c3 > .v434,
+.bl > .c3 > .v435,
+.bl > .c3 > .v436,
+.bl > .c3 > .v437,
+.bl > .c3 > .v441,
+.bl > .c3 > .v442,
+.bl > .c3 > .v443,
+.bl > .c3 > .v444,
+.bl > .c3 > .v445,
+.bl > .c3 > .v446,
+.bl > .c3 > .v447,
+.bl > .c3 > .v451,
+.bl > .c3 > .v452,
+.bl > .c3 > .v453,
+.bl > .c3 > .v454,
+.bl > .c3 > .v455,
+.bl > .c3 > .v456,
+.bl > .c3 > .v457,
+.bl > .c3 > .v461,
+.bl > .c3 > .v462,
+.bl > .c3 > .v463,
+.bl > .c3 > .v464,
+.bl > .c3 > .v465,
+.bl > .c3 > .v466,
+.bl > .c3 > .v467,
+.bl > .c3 > .v471,
+.bl > .c3 > .v472,
+.bl > .c3 > .v473,
+.bl > .c3 > .v474,
+.bl > .c3 > .v475,
+.bl > .c3 > .v476,
+.bl > .c3 > .v477
+{
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.bl > .c3 > .v41  {background-image: url(../assets/b/41.png);}
+.bl > .c3 > .v42  {background-image: url(../assets/b/42.png);}
+.bl > .c3 > .v43  {background-image: url(../assets/b/43.png);}
+.bl > .c3 > .v44  {background-image: url(../assets/b/44.png);}
+.bl > .c3 > .v45  {background-image: url(../assets/b/45.png);}
+.bl > .c3 > .v46  {background-image: url(../assets/b/46.png);}
+.bl > .c3 > .v47  {background-image: url(../assets/b/47.png);}
+.bl > .c3 > .v411 {background-image: url(../assets/b/411.png);}
+.bl > .c3 > .v412 {background-image: url(../assets/b/412.png);}
+.bl > .c3 > .v413 {background-image: url(../assets/b/413.png);}
+.bl > .c3 > .v414 {background-image: url(../assets/b/414.png);}
+.bl > .c3 > .v415 {background-image: url(../assets/b/415.png);}
+.bl > .c3 > .v416 {background-image: url(../assets/b/416.png);}
+.bl > .c3 > .v417 {background-image: url(../assets/b/417.png);}
+.bl > .c3 > .v421 {background-image: url(../assets/b/421.png);}
+.bl > .c3 > .v422 {background-image: url(../assets/b/422.png);}
+.bl > .c3 > .v423 {background-image: url(../assets/b/423.png);}
+.bl > .c3 > .v424 {background-image: url(../assets/b/424.png);}
+.bl > .c3 > .v425 {background-image: url(../assets/b/425.png);}
+.bl > .c3 > .v426 {background-image: url(../assets/b/426.png);}
+.bl > .c3 > .v427 {background-image: url(../assets/b/427.png);}
+.bl > .c3 > .v431 {background-image: url(../assets/b/431.png);}
+.bl > .c3 > .v432 {background-image: url(../assets/b/432.png);}
+.bl > .c3 > .v433 {background-image: url(../assets/b/433.png);}
+.bl > .c3 > .v434 {background-image: url(../assets/b/434.png);}
+.bl > .c3 > .v435 {background-image: url(../assets/b/435.png);}
+.bl > .c3 > .v436 {background-image: url(../assets/b/436.png);}
+.bl > .c3 > .v437 {background-image: url(../assets/b/437.png);}
+.bl > .c3 > .v441 {background-image: url(../assets/b/441.png);}
+.bl > .c3 > .v442 {background-image: url(../assets/b/442.png);}
+.bl > .c3 > .v443 {background-image: url(../assets/b/443.png);}
+.bl > .c3 > .v444 {background-image: url(../assets/b/444.png);}
+.bl > .c3 > .v445 {background-image: url(../assets/b/445.png);}
+.bl > .c3 > .v446 {background-image: url(../assets/b/446.png);}
+.bl > .c3 > .v447 {background-image: url(../assets/b/447.png);}
+.bl > .c3 > .v451 {background-image: url(../assets/b/451.png);}
+.bl > .c3 > .v452 {background-image: url(../assets/b/452.png);}
+.bl > .c3 > .v453 {background-image: url(../assets/b/453.png);}
+.bl > .c3 > .v454 {background-image: url(../assets/b/454.png);}
+.bl > .c3 > .v455 {background-image: url(../assets/b/455.png);}
+.bl > .c3 > .v456 {background-image: url(../assets/b/456.png);}
+.bl > .c3 > .v457 {background-image: url(../assets/b/457.png);}
+.bl > .c3 > .v461 {background-image: url(../assets/b/461.png);}
+.bl > .c3 > .v462 {background-image: url(../assets/b/462.png);}
+.bl > .c3 > .v463 {background-image: url(../assets/b/463.png);}
+.bl > .c3 > .v464 {background-image: url(../assets/b/464.png);}
+.bl > .c3 > .v465 {background-image: url(../assets/b/465.png);}
+.bl > .c3 > .v466 {background-image: url(../assets/b/466.png);}
+.bl > .c3 > .v467 {background-image: url(../assets/b/467.png);}
+.bl > .c3 > .v471 {background-image: url(../assets/b/471.png);}
+.bl > .c3 > .v472 {background-image: url(../assets/b/472.png);}
+.bl > .c3 > .v473 {background-image: url(../assets/b/473.png);}
+.bl > .c3 > .v474 {background-image: url(../assets/b/474.png);}
+.bl > .c3 > .v475 {background-image: url(../assets/b/475.png);}
+.bl > .c3 > .v476 {background-image: url(../assets/b/476.png);}
+.bl > .c3 > .v477 {background-image: url(../assets/b/477.png);}
+
+.bl > .c3 > .vm41,
+.bl > .c3 > .vm42,
+.bl > .c3 > .vm43,
+.bl > .c3 > .vm44,
+.bl > .c3 > .vm45,
+.bl > .c3 > .vm46,
+.bl > .c3 > .vm47,
+.bl > .c3 > .vm411,
+.bl > .c3 > .vm412,
+.bl > .c3 > .vm413,
+.bl > .c3 > .vm414,
+.bl > .c3 > .vm415,
+.bl > .c3 > .vm416,
+.bl > .c3 > .vm417,
+.bl > .c3 > .vm421,
+.bl > .c3 > .vm422,
+.bl > .c3 > .vm423,
+.bl > .c3 > .vm424,
+.bl > .c3 > .vm425,
+.bl > .c3 > .vm426,
+.bl > .c3 > .vm427,
+.bl > .c3 > .vm431,
+.bl > .c3 > .vm432,
+.bl > .c3 > .vm433,
+.bl > .c3 > .vm434,
+.bl > .c3 > .vm435,
+.bl > .c3 > .vm436,
+.bl > .c3 > .vm437,
+.bl > .c3 > .vm441,
+.bl > .c3 > .vm442,
+.bl > .c3 > .vm443,
+.bl > .c3 > .vm444,
+.bl > .c3 > .vm445,
+.bl > .c3 > .vm446,
+.bl > .c3 > .vm447,
+.bl > .c3 > .vm451,
+.bl > .c3 > .vm452,
+.bl > .c3 > .vm453,
+.bl > .c3 > .vm454,
+.bl > .c3 > .vm455,
+.bl > .c3 > .vm456,
+.bl > .c3 > .vm457,
+.bl > .c3 > .vm461,
+.bl > .c3 > .vm462,
+.bl > .c3 > .vm463,
+.bl > .c3 > .vm464,
+.bl > .c3 > .vm465,
+.bl > .c3 > .vm466,
+.bl > .c3 > .vm467,
+.bl > .c3 > .vm471,
+.bl > .c3 > .vm472,
+.bl > .c3 > .vm473,
+.bl > .c3 > .vm474,
+.bl > .c3 > .vm475,
+.bl > .c3 > .vm476,
+.bl > .c3 > .vm477
+{
+    background-position: left var(--px3);
+    background-repeat: no-repeat;
+    background-size: var(--px37) var(--px27);
+}
+.bl > .c3 > .vm41  {background-image: url(../assets/b/41.png);}
+.bl > .c3 > .vm42  {background-image: url(../assets/b/42.png);}
+.bl > .c3 > .vm43  {background-image: url(../assets/b/43.png);}
+.bl > .c3 > .vm44  {background-image: url(../assets/b/44.png);}
+.bl > .c3 > .vm45  {background-image: url(../assets/b/45.png);}
+.bl > .c3 > .vm46  {background-image: url(../assets/b/46.png);}
+.bl > .c3 > .vm47  {background-image: url(../assets/b/47.png);}
+.bl > .c3 > .vm411 {background-image: url(../assets/b/411.png);}
+.bl > .c3 > .vm412 {background-image: url(../assets/b/412.png);}
+.bl > .c3 > .vm413 {background-image: url(../assets/b/413.png);}
+.bl > .c3 > .vm414 {background-image: url(../assets/b/414.png);}
+.bl > .c3 > .vm415 {background-image: url(../assets/b/415.png);}
+.bl > .c3 > .vm416 {background-image: url(../assets/b/416.png);}
+.bl > .c3 > .vm417 {background-image: url(../assets/b/417.png);}
+.bl > .c3 > .vm421 {background-image: url(../assets/b/421.png);}
+.bl > .c3 > .vm422 {background-image: url(../assets/b/422.png);}
+.bl > .c3 > .vm423 {background-image: url(../assets/b/423.png);}
+.bl > .c3 > .vm424 {background-image: url(../assets/b/424.png);}
+.bl > .c3 > .vm425 {background-image: url(../assets/b/425.png);}
+.bl > .c3 > .vm426 {background-image: url(../assets/b/426.png);}
+.bl > .c3 > .vm427 {background-image: url(../assets/b/427.png);}
+.bl > .c3 > .vm431 {background-image: url(../assets/b/431.png);}
+.bl > .c3 > .vm432 {background-image: url(../assets/b/432.png);}
+.bl > .c3 > .vm433 {background-image: url(../assets/b/433.png);}
+.bl > .c3 > .vm434 {background-image: url(../assets/b/434.png);}
+.bl > .c3 > .vm435 {background-image: url(../assets/b/435.png);}
+.bl > .c3 > .vm436 {background-image: url(../assets/b/436.png);}
+.bl > .c3 > .vm437 {background-image: url(../assets/b/437.png);}
+.bl > .c3 > .vm441 {background-image: url(../assets/b/441.png);}
+.bl > .c3 > .vm442 {background-image: url(../assets/b/442.png);}
+.bl > .c3 > .vm443 {background-image: url(../assets/b/443.png);}
+.bl > .c3 > .vm444 {background-image: url(../assets/b/444.png);}
+.bl > .c3 > .vm445 {background-image: url(../assets/b/445.png);}
+.bl > .c3 > .vm446 {background-image: url(../assets/b/446.png);}
+.bl > .c3 > .vm447 {background-image: url(../assets/b/447.png);}
+.bl > .c3 > .vm451 {background-image: url(../assets/b/451.png);}
+.bl > .c3 > .vm452 {background-image: url(../assets/b/452.png);}
+.bl > .c3 > .vm453 {background-image: url(../assets/b/453.png);}
+.bl > .c3 > .vm454 {background-image: url(../assets/b/454.png);}
+.bl > .c3 > .vm455 {background-image: url(../assets/b/455.png);}
+.bl > .c3 > .vm456 {background-image: url(../assets/b/456.png);}
+.bl > .c3 > .vm457 {background-image: url(../assets/b/457.png);}
+.bl > .c3 > .vm461 {background-image: url(../assets/b/461.png);}
+.bl > .c3 > .vm462 {background-image: url(../assets/b/462.png);}
+.bl > .c3 > .vm463 {background-image: url(../assets/b/463.png);}
+.bl > .c3 > .vm464 {background-image: url(../assets/b/464.png);}
+.bl > .c3 > .vm465 {background-image: url(../assets/b/465.png);}
+.bl > .c3 > .vm466 {background-image: url(../assets/b/466.png);}
+.bl > .c3 > .vm467 {background-image: url(../assets/b/467.png);}
+.bl > .c3 > .vm471 {background-image: url(../assets/b/471.png);}
+.bl > .c3 > .vm472 {background-image: url(../assets/b/472.png);}
+.bl > .c3 > .vm473 {background-image: url(../assets/b/473.png);}
+.bl > .c3 > .vm474 {background-image: url(../assets/b/474.png);}
+.bl > .c3 > .vm475 {background-image: url(../assets/b/475.png);}
+.bl > .c3 > .vm476 {background-image: url(../assets/b/476.png);}
+.bl > .c3 > .vm477 {background-image: url(../assets/b/477.png);}
+
+.bl > .c3 > .v51,
+.bl > .c3 > .v52,
+.bl > .c3 > .v53,
+.bl > .c3 > .v54,
+.bl > .c3 > .v55,
+.bl > .c3 > .v56,
+.bl > .c3 > .v57,
+.bl > .c3 > .v511,
+.bl > .c3 > .v512,
+.bl > .c3 > .v513,
+.bl > .c3 > .v514,
+.bl > .c3 > .v515,
+.bl > .c3 > .v516,
+.bl > .c3 > .v517,
+.bl > .c3 > .v521,
+.bl > .c3 > .v522,
+.bl > .c3 > .v523,
+.bl > .c3 > .v524,
+.bl > .c3 > .v525,
+.bl > .c3 > .v526,
+.bl > .c3 > .v527,
+.bl > .c3 > .v531,
+.bl > .c3 > .v532,
+.bl > .c3 > .v533,
+.bl > .c3 > .v534,
+.bl > .c3 > .v535,
+.bl > .c3 > .v536,
+.bl > .c3 > .v537,
+.bl > .c3 > .v541,
+.bl > .c3 > .v542,
+.bl > .c3 > .v543,
+.bl > .c3 > .v544,
+.bl > .c3 > .v545,
+.bl > .c3 > .v546,
+.bl > .c3 > .v547,
+.bl > .c3 > .v551,
+.bl > .c3 > .v552,
+.bl > .c3 > .v553,
+.bl > .c3 > .v554,
+.bl > .c3 > .v555,
+.bl > .c3 > .v556,
+.bl > .c3 > .v557,
+.bl > .c3 > .v561,
+.bl > .c3 > .v562,
+.bl > .c3 > .v563,
+.bl > .c3 > .v564,
+.bl > .c3 > .v565,
+.bl > .c3 > .v566,
+.bl > .c3 > .v567,
+.bl > .c3 > .v571,
+.bl > .c3 > .v572,
+.bl > .c3 > .v573,
+.bl > .c3 > .v574,
+.bl > .c3 > .v575,
+.bl > .c3 > .v576,
+.bl > .c3 > .v577
+{
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.bl > .c3 > .v51  {background-image: url(../assets/b/51.png); }
+.bl > .c3 > .v52  {background-image: url(../assets/b/52.png); }
+.bl > .c3 > .v53  {background-image: url(../assets/b/53.png); }
+.bl > .c3 > .v54  {background-image: url(../assets/b/54.png); }
+.bl > .c3 > .v55  {background-image: url(../assets/b/55.png); }
+.bl > .c3 > .v56  {background-image: url(../assets/b/56.png); }
+.bl > .c3 > .v57  {background-image: url(../assets/b/57.png); }
+.bl > .c3 > .v511 {background-image: url(../assets/b/511.png);}
+.bl > .c3 > .v512 {background-image: url(../assets/b/512.png);}
+.bl > .c3 > .v513 {background-image: url(../assets/b/513.png);}
+.bl > .c3 > .v514 {background-image: url(../assets/b/514.png);}
+.bl > .c3 > .v515 {background-image: url(../assets/b/515.png);}
+.bl > .c3 > .v516 {background-image: url(../assets/b/516.png);}
+.bl > .c3 > .v517 {background-image: url(../assets/b/517.png);}
+.bl > .c3 > .v521 {background-image: url(../assets/b/521.png);}
+.bl > .c3 > .v522 {background-image: url(../assets/b/522.png);}
+.bl > .c3 > .v523 {background-image: url(../assets/b/523.png);}
+.bl > .c3 > .v524 {background-image: url(../assets/b/524.png);}
+.bl > .c3 > .v525 {background-image: url(../assets/b/525.png);}
+.bl > .c3 > .v526 {background-image: url(../assets/b/526.png);}
+.bl > .c3 > .v527 {background-image: url(../assets/b/527.png);}
+.bl > .c3 > .v531 {background-image: url(../assets/b/531.png);}
+.bl > .c3 > .v532 {background-image: url(../assets/b/532.png);}
+.bl > .c3 > .v533 {background-image: url(../assets/b/533.png);}
+.bl > .c3 > .v534 {background-image: url(../assets/b/534.png);}
+.bl > .c3 > .v535 {background-image: url(../assets/b/535.png);}
+.bl > .c3 > .v536 {background-image: url(../assets/b/536.png);}
+.bl > .c3 > .v537 {background-image: url(../assets/b/537.png);}
+.bl > .c3 > .v541 {background-image: url(../assets/b/541.png);}
+.bl > .c3 > .v542 {background-image: url(../assets/b/542.png);}
+.bl > .c3 > .v543 {background-image: url(../assets/b/543.png);}
+.bl > .c3 > .v544 {background-image: url(../assets/b/544.png);}
+.bl > .c3 > .v545 {background-image: url(../assets/b/545.png);}
+.bl > .c3 > .v546 {background-image: url(../assets/b/546.png);}
+.bl > .c3 > .v547 {background-image: url(../assets/b/547.png);}
+.bl > .c3 > .v551 {background-image: url(../assets/b/551.png);}
+.bl > .c3 > .v552 {background-image: url(../assets/b/552.png);}
+.bl > .c3 > .v553 {background-image: url(../assets/b/553.png);}
+.bl > .c3 > .v554 {background-image: url(../assets/b/554.png);}
+.bl > .c3 > .v555 {background-image: url(../assets/b/555.png);}
+.bl > .c3 > .v556 {background-image: url(../assets/b/556.png);}
+.bl > .c3 > .v557 {background-image: url(../assets/b/557.png);}
+.bl > .c3 > .v561 {background-image: url(../assets/b/561.png);}
+.bl > .c3 > .v562 {background-image: url(../assets/b/562.png);}
+.bl > .c3 > .v563 {background-image: url(../assets/b/563.png);}
+.bl > .c3 > .v564 {background-image: url(../assets/b/564.png);}
+.bl > .c3 > .v565 {background-image: url(../assets/b/565.png);}
+.bl > .c3 > .v566 {background-image: url(../assets/b/566.png);}
+.bl > .c3 > .v567 {background-image: url(../assets/b/567.png);}
+.bl > .c3 > .v571 {background-image: url(../assets/b/571.png);}
+.bl > .c3 > .v572 {background-image: url(../assets/b/572.png);}
+.bl > .c3 > .v573 {background-image: url(../assets/b/573.png);}
+.bl > .c3 > .v574 {background-image: url(../assets/b/574.png);}
+.bl > .c3 > .v575 {background-image: url(../assets/b/575.png);}
+.bl > .c3 > .v576 {background-image: url(../assets/b/576.png);}
+.bl > .c3 > .v577 {background-image: url(../assets/b/577.png);}
+
+
+
