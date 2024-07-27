@@ -156,87 +156,49 @@ B {
     }
 }
 
-.if > .c1 > .p {
-    background-image: url(../assets/pnp_p.png);
-}
-.if > .c1 > .pr {
-    background-image: url(../assets/pnp_pr.png);
-}
-.if > .c1 > .rp {
-    background-image: url(../assets/pnp_rp.png);
-}
-.if > .c1 > .r {
-    background-image: url(../assets/pnp_r.png);
-}
-.if > .c1 > .pro {
-    background-image: url(../assets/pnp_pro.png);
-}
-.if > .c1 > .rpo {
-    background-image: url(../assets/pnp_rpo.png);
-}
-.if > .c1 > .ro {
-    background-image: url(../assets/pnp_ro.png);
-}
-.if > .c1 > .pc {
-    background-image: url(../assets/pnp_pc.png);
-}
-.if > .c1 > .pi {
-    background-image: url(../assets/pnp_pi.png);
-}
-.if > .c1 > .po {
-    background-image: url(../assets/pnp_po.png);
-}
-.if > .c1 > .pio {
-    background-image: url(../assets/pnp_pio.png);
-}
-.if > .c1 > .c {
-    background-image: url(../assets/pnp_c.png);
-}
-.if > .c1 > .ci {
-    background-image: url(../assets/pnp_ci.png);
-}
-.if > .c1 > .co {
-    background-image: url(../assets/pnp_co.png);
-}
-.if > .c1 > .cio {
-    background-image: url(../assets/pnp_cio.png);
-}
-.if > .c1 > .coi {
-    background-image: url(../assets/pnp_coi.png);
-}
-.if > .c1 > .i {
-    background-image: url(../assets/pnp_i.png);
-}
-.if > .c1 > .ic {
-    background-image: url(../assets/pnp_ic.png);
-}
-.if > .c1 > .io {
-    background-image: url(../assets/pnp_io.png);
-}
-.if > .c1 > .ico {
-    background-image: url(../assets/pnp_ico.png);
-}
-.if > .c1 > .ioc {
-    background-image: url(../assets/pnp_ioc.png);
-}
-.if > .c1 > .o {
-    background-image: url(../assets/pnp_o.png);
-}
-.if > .c1 > .oc {
-    background-image: url(../assets/pnp_oc.png);
-}
-.if > .c1 > .oi {
-    background-image: url(../assets/pnp_oi.png);
-}
-.if > .c1 > .oci {
-    background-image: url(../assets/pnp_oci.png);
-}
-.if > .c1 > .oic {
-    background-image: url(../assets/pnp_oic.png);
-}
-.if > .c1 > .roi {
-    background-image: url(../assets/pnp_roi.png);
-}
+.if > .c1 > .p {background-image: url(../assets/pnp_p.png);}
+.if > .c1 > .pr {background-image: url(../assets/pnp_pr.png);}
+.if > .c1 > .prc {background-image: url(../assets/pnp_prc.png);}
+.if > .c1 > .pri {background-image: url(../assets/pnp_pri.png);}
+.if > .c1 > .pro {background-image: url(../assets/pnp_pro.png);}
+.if > .c1 > .pc {background-image: url(../assets/pnp_pc.png);}
+.if > .c1 > .pci {background-image: url(../assets/pnp_pci.png);}
+.if > .c1 > .pco {background-image: url(../assets/pnp_pco.png);}
+.if > .c1 > .pi {background-image: url(../assets/pnp_pi.png);}
+.if > .c1 > .pic {background-image: url(../assets/pnp_pic.png);}
+.if > .c1 > .pio {background-image: url(../assets/pnp_pio.png);}
+.if > .c1 > .po {background-image: url(../assets/pnp_po.png);}
+.if > .c1 > .poc {background-image: url(../assets/pnp_poc.png);}
+.if > .c1 > .poi {background-image: url(../assets/pnp_poi.png);}
+.if > .c1 > .r {background-image: url(../assets/pnp_r.png);}
+.if > .c1 > .rp {background-image: url(../assets/pnp_rp.png);}
+.if > .c1 > .rpc {background-image: url(../assets/pnp_rpc.png);}
+.if > .c1 > .rpi {background-image: url(../assets/pnp_rpi.png);}
+.if > .c1 > .rpo {background-image: url(../assets/pnp_rpo.png);}
+.if > .c1 > .rc {background-image: url(../assets/pnp_rc.png);}
+.if > .c1 > .rci {background-image: url(../assets/pnp_rci.png);}
+.if > .c1 > .rco {background-image: url(../assets/pnp_rco.png);}
+.if > .c1 > .ri {background-image: url(../assets/pnp_ri.png);}
+.if > .c1 > .ric {background-image: url(../assets/pnp_ric.png);}
+.if > .c1 > .rio {background-image: url(../assets/pnp_rio.png);}
+.if > .c1 > .ro {background-image: url(../assets/pnp_ro.png);}
+.if > .c1 > .roc {background-image: url(../assets/pnp_roc.png);}
+.if > .c1 > .roi {background-image: url(../assets/pnp_roi.png);}
+.if > .c1 > .c {background-image: url(../assets/pnp_c.png);}
+.if > .c1 > .ci {background-image: url(../assets/pnp_ci.png);}
+.if > .c1 > .cio {background-image: url(../assets/pnp_cio.png);}
+.if > .c1 > .co {background-image: url(../assets/pnp_co.png);}
+.if > .c1 > .coi {background-image: url(../assets/pnp_coi.png);}
+.if > .c1 > .i {background-image: url(../assets/pnp_i.png);}
+.if > .c1 > .ic {background-image: url(../assets/pnp_ic.png);}
+.if > .c1 > .ico {background-image: url(../assets/pnp_ico.png);}
+.if > .c1 > .io {background-image: url(../assets/pnp_io.png);}
+.if > .c1 > .ioc {background-image: url(../assets/pnp_ioc.png);}
+.if > .c1 > .o {background-image: url(../assets/pnp_o.png);}
+.if > .c1 > .oc {background-image: url(../assets/pnp_oc.png);}
+.if > .c1 > .oci {background-image: url(../assets/pnp_oci.png);}
+.if > .c1 > .oi {background-image: url(../assets/pnp_oi.png);}
+.if > .c1 > .oic {background-image: url(../assets/pnp_oic.png);}
 
 /* 背番号 */
 .if > .c1 > .se {
@@ -1032,7 +994,7 @@ B {
 .cb > .c7 > .b,
 .cb > .c9 > .ca > B > .b,
 .cb > .c9 > .cb > B > .b,
-.cb > .c9 > .cc > B > .b
+.cb > .c9 > .cc > B > .b,
 .cb > .c2 > .bx,
 .cb > .c3 > .bx,
 .cb > .c4 > .bx,
@@ -1095,7 +1057,7 @@ B {
 .cb > .c7 > .e,
 .cb > .c9 > .ca > B > .e,
 .cb > .c9 > .cb > B > .e,
-.cb > .c9 > .cc > B > .e
+.cb > .c9 > .cc > B > .e,
 .cb > .c2 > .ex,
 .cb > .c3 > .ex,
 .cb > .c4 > .ex,
@@ -1116,7 +1078,7 @@ B {
 .cb > .c7 > .f,
 .cb > .c9 > .ca > B > .f,
 .cb > .c9 > .cb > B > .f,
-.cb > .c9 > .cc > B > .f
+.cb > .c9 > .cc > B > .f,
 .cb > .c2 > .fx,
 .cb > .c3 > .fx,
 .cb > .c4 > .fx,
@@ -1137,7 +1099,7 @@ B {
 .cb > .c7 > .g,
 .cb > .c9 > .ca > B > .g,
 .cb > .c9 > .cb > B > .g,
-.cb > .c9 > .cc > B > .g
+.cb > .c9 > .cc > B > .g,
 .cb > .c2 > .gx,
 .cb > .c3 > .gx,
 .cb > .c4 > .gx,
@@ -1331,6 +1293,12 @@ B {
     background-size: 100% 100%;
 }
 
+.ab > .l > .G > B,
+.ab > .l > .W > B
+{
+    width: 100%;
+}
+
 .ab > .l > .P > B,
 .ab > .l > .M > B,
 .ab > .l > .N > B
@@ -1397,16 +1365,15 @@ B {
     position: relative;
 }
 
-.ab > .y > B {
-    background-image: url(../assets/pabi.png);
-}
-
 .ab > .y > B :first-child {
     width: 14.285714285714286%;
     background-image: none;
     background-color: #169dc3;
     background-size: calc(14.285714285714286%) 99%;
     color: #ffffff;
+}
+.ab > .y > B > B:first-child:before {
+    content: "起用法";
 }
 
 .ab > .y > B > B {
@@ -1566,6 +1533,8 @@ I,
 .tb > B + B:before
 {
     font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+    overflow-x: scroll;
+    white-space: nowrap;
 }
 
 .if > .c3 > .p > B:before,
