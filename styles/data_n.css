@@ -610,7 +610,7 @@ B {
 .cb > .c5 :first-child,
 .cb > .c6 :first-child,
 .cb > .c7 :first-child,
-.cb > .c8 :first-child,
+.cb > .c8 > B:first-child,
 .cb > .c9 > .ca > .w {
     width: 87.5%;
     height: var(--px16);
@@ -662,7 +662,7 @@ B {
     font-size: var(--px12);
     content: "エラー回避";
 }
-.cb > .c8 :first-child:before {
+.cb > .c8 > B:first-child:before {
     font-size: var(--px11);
     content: "守備位置";
 }
@@ -755,6 +755,11 @@ B {
     text-align: center;
     font-size: var(--px13);
     background-image: none;
+}
+.cb > .c8 > B + B > I {
+    font-size: var(--px10);
+    padding-left: var(--px2);
+    font-weight: 500;
 }
 .cb > .c8 > B + B:first-letter {
     font-size: var(--px16);
@@ -1490,7 +1495,7 @@ B {
 .cb > .c5 :first-child,
 .cb > .c6 :first-child,
 .cb > .c7 :first-child,
-.cb > .c8 :first-child,
+.cb > .c8 > B:first-child,
 .cb > .c1 > B + B + B,
 .cb > .c2 > B + B + B,
 .cb > .c3 > B + B + B,
@@ -1578,7 +1583,7 @@ I,
 .cb > .c5 :first-child,
 .cb > .c6 :first-child,
 .cb > .c7 :first-child,
-.cb > .c8 :first-child,
+.cb > .c8 > B:first-child,
 .cb > .c9 > .ca > B + B:before,
 .cb > .c9 > .ca > B + B + B:before,
 .cb > .c9 > .cb > B:before,
