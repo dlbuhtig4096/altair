@@ -1,28 +1,31 @@
-
-
-.frm > .cid-x:has(.x-1:checked) ~ .cid-1,
-.frm > .lv-x:has(.x-1:checked) ~ .db > .lv-1,
-.frm > .lv-x:has(.x-2:checked) ~ .db > .lv-2,
-.frm > .lv-x:has(.x-3:checked) ~ .db > .lv-3,
-.frm > .lv-x:has(.x-4:checked) ~ .db > .lv-4,
-.frm > .lv-x:has(.x-5:checked) ~ .db > .lv-5,
-.frm > .lv-x:has(.x-6:checked) ~ .db > .lv-6,
-.frm > .lv-x:has(.x-7:checked) ~ .db > .lv-7,
-.frm > .lv-x:has(.x-8:checked) ~ .db > .lv-8,
-.frm > .lv-x:has(.x-9:checked) ~ .db > .lv-9,
-.frm > .lv-x:has(.x-10:checked) ~ .db > .lv-10,
-.frm > .lv-x:has(.x-11:checked) ~ .db > .lv-11,
-.frm > .lv-x:has(.x-12:checked) ~ .db > .lv-12,
-.frm > .lv-x:has(.x-13:checked) ~ .db > .lv-13
+.frm > .lv-x:has(.x-1:checked) ~ .db > * .lv-1,
+.frm > .lv-x:has(.x-2:checked) ~ .db > * .lv-2,
+.frm > .lv-x:has(.x-3:checked) ~ .db > * .lv-3,
+.frm > .lv-x:has(.x-4:checked) ~ .db > * .lv-4,
+.frm > .lv-x:has(.x-5:checked) ~ .db > * .lv-5,
+.frm > .lv-x:has(.x-6:checked) ~ .db > * .lv-6,
+.frm > .lv-x:has(.x-7:checked) ~ .db > * .lv-7,
+.frm > .lv-x:has(.x-8:checked) ~ .db > * .lv-8,
+.frm > .lv-x:has(.x-9:checked) ~ .db > * .lv-9,
+.frm > .lv-x:has(.x-10:checked) ~ .db > * .lv-10,
+.frm > .lv-x:has(.x-11:checked) ~ .db > * .lv-11,
+.frm > .lv-x:has(.x-12:checked) ~ .db > * .lv-12,
+.frm > .lv-x:has(.x-13:checked) ~ .db > * .lv-13
 {
     display: block;
 }
 
 .lb
 {
+    width: 12.5%;
     font-size: var(--px20);
     line-height: var(--px25);
     display: inline-block;
+    text-align: right;
+}
+.lv-x + .lb
+{
+    width: 2.5%;
 }
 .lv-x > input
 {
@@ -52,7 +55,7 @@
     background-color: #00478f;
 }
 
-.cid-x, .lv-x
+.c-x, .lv-x
 {
     display: inline-block;
     width: 25%;
@@ -61,7 +64,6 @@
     margin: var(--px5) 0 0 0
 }
 
-.cid-1,
 .lv-1, .lv-2, .lv-3, .lv-4, .lv-5, .lv-6, .lv-7, .lv-8, .lv-9, .lv-10, .lv-11, .lv-12, .lv-13
 {
     display: none;

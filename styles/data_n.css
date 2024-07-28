@@ -1,5 +1,5 @@
 :root {
-    --width: 75vw;;
+    --width: 80vw;
     --px1:  calc(var(--width) *  1 / 806);
     --px2:  calc(var(--width) *  2 / 806);
     --px3:  calc(var(--width) *  3 / 806);
@@ -1453,17 +1453,21 @@ B {
 
 .tp:has(.x-p:checked) ~ .db > * .tb-p,
 .tp:has(.x-f:checked) ~ .db > * .tb-f,
+.tp:has(.x-f:checked) ~ .db > * .tb-fd,
 .tp:has(.x-d:checked) ~ .db > * .tb-d,
+.tp:has(.x-d:checked) ~ .db > * .tb-fd,
 .tp:has(.x-n:checked) ~ .db > * .tb-n,
 .tb:has(.x-p:checked) ~ .db > * .tb-p,
 .tb:has(.x-f:checked) ~ .db > * .tb-f,
+.tb:has(.x-f:checked) ~ .db > * .tb-fd,
 .tb:has(.x-d:checked) ~ .db > * .tb-d,
+.tb:has(.x-d:checked) ~ .db > * .tb-fd,
 .tb:has(.x-n:checked) ~ .db > * .tb-n
 {
     display: block;
 }
 
-.tb-p, .tb-f, .tb-d, .tb-n
+.tb-p, .tb-f, .tb-d, .tb-n, .tb-fd
 {
     display: none;
 }
@@ -1514,7 +1518,31 @@ I,
 .ab > .n > .M,
 .ab > .n > .PM,
 .ab > .y > B :first-child,
-.ab > .y > B > B,
+.ab > .y > B > B
+{
+    overflow: scroll;
+    white-space: nowrap;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.ab > .l > .P,
+.ab > .l > .M,
+.ab > .l > .P > B,
+.ab > .l > .P > B + B,
+.ab > .l > .M > B,
+.ab > .l > .M > B + B,
+.ab > .l > .N > B,
+.ab > .l > .N > B + B,
+.ab > .n > .G,
+.ab > .n > .P,
+.ab > .n > .M,
+.ab > .n > .PM,
+.ab > .y > B :first-child,
+.ab > .y > B > B
 .bl > .c1 > B,
 .bl > .c1 > B + B,
 .bl > .c1 > B + B + B,
@@ -1533,8 +1561,6 @@ I,
 .tb > B + B:before
 {
     font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
-    overflow-x: scroll;
-    white-space: nowrap;
 }
 
 .if > .c3 > .p > B:before,
