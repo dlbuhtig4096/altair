@@ -73,16 +73,23 @@ I {
 /**************/
 .frm
 {
-      border-width: 0;
-      border-style:solid;
-      border-color:#99ccff;
+    border-width: 0;
+    border-style:solid;
+    border-color:#99ccff;
 /*
-      border-radius: var(--px6);
-      -moz-border-radius: var(--px6);
-      -webkit-border-radius: var(--px6);
-      position:relative;
+    border-radius: var(--px6);
+    -moz-border-radius: var(--px6);
+    -webkit-border-radius: var(--px6);
 */
-      padding: var(--px5) 0 var(--px8) 0
+    padding: var(--px5) 0 var(--px8) 0;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    position: absolute;
+}
+
+.db {
+    text-align: center;
+    display: none;
 }
 
 P {
@@ -228,7 +235,7 @@ B {
 }
 
 /* 利き腕 */
-.if > .c2 > .m + B {
+.if > .c2 > .m + B:last-child {
     width: 30%;
     height: var(--px20);
     line-height: var(--px20);

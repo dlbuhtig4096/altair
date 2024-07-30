@@ -1,3 +1,9 @@
+.frm>.f-x:has(.x-c:checked) ~ .c-x,
+.frm>.f-x:has(.x-t:checked) ~ .t-x
+{
+    display: inline-block;
+}
+
 .frm > .lv-x:has(.x-1:checked) ~ .db > * > .lv-1,
 .frm > .lv-x:has(.x-2:checked) ~ .db > * > .lv-2,
 .frm > .lv-x:has(.x-3:checked) ~ .db > * > .lv-3,
@@ -23,6 +29,52 @@
     display: inline-block;
     text-align: right;
 }
+
+.f-x, .c-x, .t-x
+{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    padding: var(--px5);
+    background-color: #fff;
+    border: var(--px1) solid #caced1;
+    border-radius: var(--px2);
+    color: #000;
+    cursor: pointer;
+    text-align: center;
+}
+
+.f-x, .c-x, .t-x, .lv-x
+{
+    font-size: var(--px15);
+    line-height: var(--px20);
+}
+
+.f-x
+{
+    width: 7.5%;
+    margin: var(--px5) 1% 0 12.5%;
+}
+
+.c-x, .t-x
+{
+    width: 25%;
+    margin: var(--px5) 0 0 0;
+}
+
+.c-x, .t-x,
+.lv-1, .lv-2, .lv-3, .lv-4, .lv-5, .lv-6, .lv-7, .lv-8, .lv-9, .lv-10, .lv-11, .lv-12, .lv-13
+{
+    display: none;
+}
+
+.lv-x
+{
+    width: 25%;
+    margin: var(--px5) 0 0 1%;
+    display: inline-block;
+}
 .lv-x + .lb
 {
     width: 2.5%;
@@ -40,7 +92,7 @@
     appearance: none;
     margin: 0;
     padding: 0;
-    position: relative;
+    transform: translate(0, 12.5%);
 }
 .lv-x > .x-l
 {
@@ -53,18 +105,4 @@
 .lv-x > input:checked ~ input
 {
     background-color: #00478f;
-}
-
-.c-x, .lv-x
-{
-    display: inline-block;
-    width: 25%;
-    font-size: var(--px15);
-    line-height: var(--px20);
-    margin: var(--px5) 0 0 0
-}
-
-.lv-1, .lv-2, .lv-3, .lv-4, .lv-5, .lv-6, .lv-7, .lv-8, .lv-9, .lv-10, .lv-11, .lv-12, .lv-13
-{
-    display: none;
 }
