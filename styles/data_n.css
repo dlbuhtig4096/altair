@@ -224,6 +224,7 @@ B {
 /* フォーム */
 .if > .c2 > .m {
     width: 60%;
+    font-size: var(--px11);
     height: var(--px20);
     line-height: var(--px20);
     text-align: center;
