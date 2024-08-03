@@ -1,0 +1,60 @@
+.frm>.f-x:has(.x-c:checked) ~ .c-x,
+.frm>.f-x:has(.x-t:checked) ~ .t-x,
+.frm>.f-x:has(.x-t:checked) ~ .s-x
+{
+    display: inline-block;
+}
+
+.lb
+{
+    width: 12.5%;
+    font-size: var(--px20);
+    line-height: var(--px25);
+    display: inline-block;
+    text-align: right;
+}
+
+.f-x, .c-x, .t-x, .s-x
+{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    padding: var(--px5);
+    background-color: #fff;
+    border: var(--px1) solid #caced1;
+    border-radius: var(--px2);
+    color: #000;
+    cursor: pointer;
+    text-align: center;
+}
+
+.f-x, .c-x, .t-x, .s-x
+{
+    font-size: var(--px15);
+    line-height: var(--px20);
+}
+
+.f-x
+{
+    width: 7.5%;
+    margin: var(--px5) 1% 0 25%;
+}
+
+.c-x, .t-x
+{
+    width: 35%;
+    margin: var(--px5) 0 0 0;
+}
+
+.s-x
+{
+    width: 7.5%;
+    margin: var(--px5) 0 0 1%;
+}
+
+.c-x, .t-x, .s-x
+{
+    display: none;
+}
+
