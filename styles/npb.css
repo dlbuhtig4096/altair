@@ -5,15 +5,6 @@
     display: inline-block;
 }
 
-.lb
-{
-    width: 12.5%;
-    font-size: var(--px20);
-    line-height: var(--px25);
-    display: inline-block;
-    text-align: right;
-}
-
 .f-x, .c-x, .t-x, .s-x
 {
     appearance: none;

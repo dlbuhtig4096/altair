@@ -76,15 +76,27 @@ I {
     border-width: 0;
     border-style:solid;
     border-color:#99ccff;
-/*
-    border-radius: var(--px6);
-    -moz-border-radius: var(--px6);
-    -webkit-border-radius: var(--px6);
-*/
+    display: flex;
+    flex-wrap: wrap;
     padding: var(--px5) 0 var(--px8) 0;
     transform: translate(-50%, 0%);
     left: 50%;
     position: absolute;
+}
+
+.frm > hr
+{
+    width: 100%;
+}
+
+.lb
+{
+    width: 15%;
+    font-size: var(--px20);
+    line-height: var(--px25);
+    display: inline-block;
+    text-align: right;
+    margin: var(--px8) 0 0 0;
 }
 
 .db {
@@ -1416,14 +1428,16 @@ B {
     text-align: left;
 }
 
+.tp > .x-a { background-color: #00478f; }
+.tp > .x-a:checked { background-color: #1e90ff; }
 .tp > .x-p { background-color: #800f2b; }
 .tp > .x-p:checked { background-color: #e73562; }
-.tp > .x-f { background-color: #00478f; }
-.tp > .x-f:checked { background-color: #1e90ff; }
-.tp > .x-d { background-color: #006616; }
-.tp > .x-d:checked { background-color: #00cc2c; }
-.tp > .x-n { background-color: #634c18; }
-.tp > .x-n:checked { background-color: #c4972f; }
+.tp > .x-f { background-color: #0059b3; }
+.tp > .x-f:checked { background-color: #66b2ff; }
+.tp > .x-d { background-color: #947224; }
+.tp > .x-d:checked { background-color: #c4972f; }
+.tp > .x-n { background-color: #006616; }
+.tp > .x-n:checked { background-color: #00cc2c; }
 
 .tp > input
 {
@@ -1447,6 +1461,10 @@ B {
     position: relative;
 }
 
+.tp > .x-a:before {
+    font-size: var(--px13);
+    content: "選手能力";
+}
 .tp > .x-p:before {
     font-size: var(--px13);
     content: "投手能力";
@@ -1461,15 +1479,17 @@ B {
 }
 .tp > .x-n:before {
     font-size: var(--px13);
-    content: "その他";
+    content: "プロフィール";
 }
 
+.tp:has(.x-a:checked) ~ .db > * .tb-a,
 .tp:has(.x-p:checked) ~ .db > * .tb-p,
 .tp:has(.x-f:checked) ~ .db > * .tb-f,
 .tp:has(.x-f:checked) ~ .db > * .tb-fd,
 .tp:has(.x-d:checked) ~ .db > * .tb-d,
 .tp:has(.x-d:checked) ~ .db > * .tb-fd,
 .tp:has(.x-n:checked) ~ .db > * .tb-n,
+.tb:has(.x-a:checked) ~ .db > * .tb-a,
 .tb:has(.x-p:checked) ~ .db > * .tb-p,
 .tb:has(.x-f:checked) ~ .db > * .tb-f,
 .tb:has(.x-f:checked) ~ .db > * .tb-fd,
